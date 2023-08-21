@@ -31,11 +31,19 @@
 
     <div class="container">
         <br><br><br><br>
-        <div class="jumbotron">
-            <p style="color: black">créer un nouveau image:</p>
-            <a class="btn btn-primary btn-lg" href="{{ route('photos.create') }}" role="button">create</a>
+        <section class="mb-5"
+            style="background-image: url(clientpage/images/4492606.jpg); padding: 5em 0em;">
+            <h2 class="tit6 t-center" style="    font-size: 3rem;
+            text-align: center;
+            text-shadow: 0px 0 20px black;">
+                Galery
+            </h2>
+        </section>
+        <div class="">
+            {{-- <p style="color: black">créer un nouveau image:</p> --}}
+            <a class="btn btn-primary btn-lg p-3" href="{{ route('photos.create') }}" role="button">ajouter image</a>
         </div>
-        <table class="table">
+        <table class="table" >
             <thead>
                 <tr>
                     <th scope="col">image</th>

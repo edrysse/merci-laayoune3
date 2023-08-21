@@ -12,7 +12,15 @@
         <br />
         <br />
         <br />
-        <table class="table">
+        <section class="mb-5"
+            style="background-image: url(clientpage/images/vecteezy_background-junk-food-related-seamless-pattern-and-background_21429008.jpg); padding: 5em 0em;">
+            <h2 class="tit6 t-center" style="    font-size: 3rem;
+            text-align: center;
+            text-shadow: 0px 0 20px black;">
+                FEEDBAK CLIENT
+            </h2>
+        </section>
+        <table class="table" >
             <thead>
                 <tr>
                     <th scope="col">nom</th>
@@ -47,11 +55,12 @@
                 @endforeach
             </tbody>
         </table>
+        {{ $contacts->links() }}
         @if ($msg = Session::get('succes'))
             <div class="alert alert-success">
                 {{ $msg }}
             </div>
         @endif
-
+        
     </div>
 @endsection

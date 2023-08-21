@@ -10,14 +10,26 @@
 
 @section('content')
     <div class="container">
+        
         <br />
         <br />
         <br />
         <br />
-        <div class="jumbotron">
+        {{-- <div class="jumbotron">
             <h1 style="color:black">All Commandes</h1>
         </div>
-        <table class="table">
+        <div class="">
+            <h1 style="color:black">All Commandes</h1>
+        </div> --}}
+        <section class="mb-5"
+            style="background-image: url(clientpage/images/vecteezy_background-junk-food-related-seamless-pattern-and-background_21428963.jpg); padding: 5em 0em;">
+            <h2 class="tit6 t-center" style="    font-size: 3rem;
+            text-align: center;
+            text-shadow: 0px 0 20px black;">
+                All Commandes
+            </h2>
+        </section>
+        <table class="table" >
             <thead>
                 <tr>
                     <th scope="col" style="width: 150px">Nom <br> Prenom</th>
@@ -64,11 +76,12 @@
                 @endforeach
             </tbody>
         </table>
+        {{ $comnds->links() }}
         @if ($msg = Session::get('succes'))
             <div class="alert alert-success">
                 {{ $msg }}
             </div>
         @endif
-
+        
     </div>
 @endsection

@@ -27,11 +27,20 @@
         <br />
         <br />
 
-        <div class="jumbotron">
-            <p style="color:black"> ajouter un chef:</p>
-            <a class="btn btn-primary btn-lg" href="{{ route('chef.create') }}" role="button">create</a>
+        <section class="mb-5"
+            style="background-image: url(clientpage/images/vecteezy_background-junk-food-related-seamless-pattern-and-background_21429007.jpg); padding: 5em 0em;">
+            <h2 class="tit6 t-center" style="    font-size: 3rem;
+            text-align: center;
+            text-shadow: 0px 0 20px black;
+            letter-spacing: 5px;">
+                TEAM
+            </h2>
+        </section>
+        <div class="">
+            {{-- <p style="color:black"> ajouter un chef:</p> --}}
+            <a class="btn btn-primary btn-lg p-3" href="{{ route('chef.create') }}" role="button">ajouter un membre</a>
         </div>
-        <table class="table">
+        <table class="table" >
             <thead>
                 <tr>
                     <th scope="col">image</th>

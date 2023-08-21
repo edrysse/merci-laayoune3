@@ -15,14 +15,15 @@ class ComndController extends Controller
     public function index()
     {
         //
-        $cartItems=Cart::content();       
+        $cartItems=Cart::content();
         return view('client.validation',compact('cartItems'));
     }
 
     public function showcomnds()
     {
         //
-        $comnds = comnd::orderBy('created_at', 'desc')->get();
+        
+        $comnds = comnd::orderBy('created_at', 'desc')->paginate(15);
         return view('commande.index',compact('comnds'));
     }
 
@@ -32,8 +33,8 @@ class ComndController extends Controller
     public function create()
     {
         //
-        $cartItems=Cart::content();  
-        session()->  put('ItemsCount', count($cartItems));     
+        $cartItems=Cart::content();
+        session()->  put('ItemsCount', count($cartItems));
         return view('client.validation',compact('cartItems'));
     }
 
@@ -59,19 +60,19 @@ class ComndController extends Controller
             'adresse' => $request->adresse,
             'commande' => $request->commande
           ]);
-          
+
           $cartItems = Cart::destroy();
         //   $cartItems = [];
         //   $cartItems = null;
-        
-          //session()->  put('ItemsCount', $cartItems); 
-        //   session()->forget('ItemsCount'); 
+
+          //session()->  put('ItemsCount', $cartItems);
+        //   session()->forget('ItemsCount');
         // Session::forget('ItemsCount');
         // session()->forget('ItemsCount');
-        // $cartItems=Cart::content();       
+        // $cartItems=Cart::content();
         // return view('client.validation',compact('cartItems'))->with('thanks', 'Votre commande sera livrée bientôt, merci.');
-        return redirect()->back()->with('cartItems' , $cartItems)->with('thanks', 'Votre commande sera livrée bientôt, merci.');  
-        // return redirect()->back()->with(compact('cartItems'))->with('thanks', 'Votre commande sera livrée bientôt, merci.');  
+        return redirect()->back()->with('cartItems' , $cartItems)->with('thanks', 'Votre commande sera livrée bientôt, merci.');
+        // return redirect()->back()->with(compact('cartItems'))->with('thanks', 'Votre commande sera livrée bientôt, merci.');
     }
 
     /**

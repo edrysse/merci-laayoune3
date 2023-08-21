@@ -37,6 +37,7 @@
     padding: 0;
     width: 100%;
     table-layout: fixed;
+    box-shadow: 1px 1px 20px 0px #999;
     
   }
   
@@ -46,10 +47,15 @@
   }
   
   table tr{
-    /* background-color: #f8f8f8; */
-    background-color: transparent;
+    background-color: #ffffff;
+    /* background-color: transparent; */
     border: 1px solid #ddd;
     padding: .35em;
+    
+  }
+  tbody tr{
+    /* height: 130px; */
+    
   }
   
   table th ,
@@ -78,6 +84,7 @@
   @media screen and (max-width: 992px) {
     table{
       border: 0;
+      
     }
   
     table caption {
@@ -153,6 +160,11 @@ table .btn{
     }
 }
   
+body {
+  background-color: #EDEDEC;
+  background-image: radial-gradient(#000000 0.5px, #EDEDEC 0.5px);
+  background-size: 10px 10px;
+}
 </style>
 
 

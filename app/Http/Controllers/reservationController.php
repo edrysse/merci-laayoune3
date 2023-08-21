@@ -16,7 +16,7 @@ class reservationController extends Controller
     {
         $profile=Profil::where('id_user',Auth::id())->first();
         // $reservations=Reservation::all();
-        $reservations=Reservation::orderBy('created_at', 'desc')->get();
+        $reservations=Reservation::orderBy('created_at', 'desc')->paginate(15);
         return view('reservation.index')->with('reservations',$reservations)->with('profile',$profile);
 
  }

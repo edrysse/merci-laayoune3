@@ -31,15 +31,23 @@
         <br>
         <br>
         <br>
-        <div class="jumbotron">
-            <h1 style="color: black">All reservations</h1>
-            <a class="btn btn-primary btn-lg" href="{{ route('reservation.create') }}" role="button">create</a>
+        <section class="mb-5"
+            style="background-image: url(clientpage/images/28414724.jpg); padding: 5em 0em;">
+            <h2 class="tit6 t-center" style="    font-size: 3rem;
+            text-align: center;
+            text-shadow: 0px 0 20px black;">
+                RESERVATIONS
+            </h2>
+        </section>
+        <div class="">
+            {{-- <h1 style="color: black">All reservations</h1> --}}
+            <a class="btn btn-primary btn-lg p-3" href="{{ route('reservation.create') }}" role="button">ajouter réservation</a>
             {{-- <a class="btn btn-danger btn-lg" href="{{ route('reservation.Trashed') }}" role="button">trashed<i
                     class="fa-solid fa-trash"></i></a> --}}
 
         </div>
         @if ($reservations->count() > 0)
-            <table class="table">
+            <table class="table" >
                 <thead>
                     <tr>
                         <th scope="col">date</th>
@@ -77,12 +85,13 @@
                     @endforeach
                 </tbody>
             </table>
+            {{ $reservations->links() }}
             @if ($msg = Session::get('succes'))
                 <div class="alert alert-success">
                     {{ $msg }}
                 </div>
             @endif
-
+            
     </div>
 @else
     <div class="alert alert-danger">no reservations</div>

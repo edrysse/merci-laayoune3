@@ -14,7 +14,7 @@ class ContactConroller extends Controller
      }
     public function index()
     {$profile=Profil::where('id_user',Auth::id())->first();
-        $contacts = Contact::orderBy('created_at', 'desc')->get();
+        $contacts = Contact::orderBy('created_at', 'desc')->paginate(15);
         return view('contact.index', compact('contacts','profile'));
     }
 

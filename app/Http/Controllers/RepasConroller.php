@@ -15,7 +15,7 @@ class RepasConroller extends Controller
     public function index()
     {
         $profile=Profil::where('id_user',Auth::id())->first();
-        $repas = Repas::all();
+        $repas = Repas::paginate(15);
         return view('repas.index', compact('repas','profile'));
     }
 

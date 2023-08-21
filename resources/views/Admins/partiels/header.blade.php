@@ -18,7 +18,7 @@ button:focus{
     
     <button  type="button"
         data-toggle="offcanvas" onclick="openNav()" class="btn">
-        <i class="fas fa-bars" style="font-size:25px"></i>
+        <i class="fas fa-bars" style="font-size:25px; color:#818181;"></i>
     </button>
     {{-- <input id='bold' type='button' ><i class="fas fa-bars"></i> --}}
     

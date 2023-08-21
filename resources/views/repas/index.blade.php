@@ -26,11 +26,19 @@
         <br />
         <br />
         <br />
-        <div class="jumbotron">
-            <h4 style="color:black">ajouter un repas:</h4>
-            <a class="btn btn-primary btn-lg" href="{{ route('repas.create') }}" role="button">create</a>
+        <section class="mb-5"
+            style="background-image: url(clientpage/images/vecteezy_background-junk-food-related-seamless-pattern-and-background_21428961.jpg); padding: 5em 0em;">
+            <h2 class="tit6 t-center" style="    font-size: 3rem;
+            text-align: center;
+            text-shadow: 0px 0 20px black;">
+                MENU
+            </h2>
+        </section>
+        <div  >
+            {{-- <h4 style="color:black; text-transform: uppercase;">ajouter un repas:</h4> --}}
+            <a class="btn btn-primary btn-lg p-3" href="{{ route('repas.create') }}" role="button">ajouter un repas</a>
         </div>
-        <table class="table">
+        <table class="table" >
             <thead>
                 <tr>
                     <th scope="col">image</th>
@@ -66,6 +74,7 @@
                 @endforeach
             </tbody>
         </table>
+        {{ $repas->links() }}
         @if ($msg = Session::get('succes'))
             <div class="alert alert-success">
                 {{ $msg }}

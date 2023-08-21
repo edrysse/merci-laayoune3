@@ -6,13 +6,13 @@
     }
     /* The sidebar menu */
 .sidebar {
-  max-height: 100%; /* 100% Full-height */
+  min-height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 4; /* Stay on top */
   top: 0;
   left: 0;
-  /*background-color: #111;*/ /* Black*/
+  background-color: #ffffff; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
@@ -30,7 +30,7 @@
 
 /* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  color: #f1f1f1;
+  color: #ec1d25;
 }
 
 /* Position and style the close button (top right corner) */
@@ -93,7 +93,7 @@
 
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: white">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: #818181">&times;</a>
     {{-- <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         <a class="sidebar-brand brand-logo" href="clientIndex" style="color: white">Acceuil </a>
 
@@ -102,7 +102,7 @@
     flex-direction: column;
     align-items: center;">
     <?xml version="1.0" ?><svg style="enable-background:new 0 0 241.313 449.83; width:50px" version="1.1" viewBox="0 0 241.313 449.83" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Frappe"><path d="M71.456,181.837c0,0,11.929,194.192,121.058,196.828l-8.6,53.645H54.763L39.828,181.837H71.456z" style="fill:#C9711A;"/><path d="M227.256,125.341h-6.363c-4.63-33.118-25.252-61.126-53.861-75.928l1.006-21.299h52.189   c7.763,0,14.057-6.294,14.057-14.057S227.99,0,220.227,0h-65.598c-7.506,0-13.687,5.896-14.04,13.395l-1.249,26.477   c-6.064-1.136-12.293-1.798-18.683-1.798c-51.091,0-93.355,38.043-100.236,87.267h-6.363C6.294,125.341,0,131.635,0,139.398v42.172   c0,7.766,6.294,14.057,14.057,14.057h6.026l11.923,215.615c1.198,21.638,19.112,38.589,40.785,38.589h95.73   c21.673,0,39.587-16.95,40.785-38.589l11.923-215.615h6.026c7.763,0,14.057-6.291,14.057-14.057v-42.172   C241.313,131.635,235.019,125.341,227.256,125.341z M28.114,167.513v-14.057h105.868l-0.662,14.057H28.114z M162.124,153.455   h51.074v14.057h-51.736L162.124,153.455z M192.514,125.341h-29.063l2.061-43.688C179.205,92.316,189.065,107.68,192.514,125.341z    M120.656,66.188c5.98,0,11.773,0.776,17.342,2.135l-2.689,57.018h-86.51C55.371,91.674,85.095,66.188,120.656,66.188z    M181.233,409.687c-0.374,6.744-5.958,12.029-12.712,12.029h-95.73c-6.754,0-12.338-5.285-12.712-12.029l-11.837-214.06h83.749   l-8.975,190.283c-0.367,7.756,5.622,14.339,13.378,14.706c0.227,0.007,0.45,0.014,0.673,0.014c7.461,0,13.676-5.865,14.03-13.395   l9.038-191.608h32.935L181.233,409.687z" style="fill:#352517;"/></g><g id="Layer_1"/></svg>
-    <h1>MerciLaaoyne</h1>
+    <h1 style="color: #818181">MerciLaaoyne</h1>
     </div>
     
     <ul class="nav">
@@ -122,7 +122,7 @@
 
             </div>
         </li> --}}
-        <li class="nav-item profile">
+        {{-- <li class="nav-item profile">
             <div class="profile-desc">
                 <div class="profile-pic">
                     <div class="count-indicator">
@@ -139,8 +139,8 @@
         </li>
         <li class="nav-item nav-category">
             <span class="nav-link">Navigation</span>
-        </li>
-        <br>
+        </li> --}}
+
         {{-- <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="user" aria-expanded="false" aria-controls="ui-basic">
                 <span class="menu-icon">
@@ -228,8 +228,8 @@
                 <span class="menu-title">Galery</span>
             </a>
         </li>
-        
-        <li class="nav-item menu-items" style="margin-top: 170px;">
+        <br><br><br>
+        <li class="nav-item menu-items" style="margin-top: 50px;">
             <span class="barre"></span>
             <a class="nav-link" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
