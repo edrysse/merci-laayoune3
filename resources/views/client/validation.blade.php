@@ -277,6 +277,15 @@
         .ret {
             margin-top: 1rem;
         }
+        .container, .card-body, .activity-checkout, .mod-4c {
+            padding: 0 ;
+        }
+        .font-size-16, .text-muted {
+            padding-left: 2em;
+        }
+        .checkout-item {
+            padding: 0 !important;
+        }
     }
     
     .ContinueSH:hover {

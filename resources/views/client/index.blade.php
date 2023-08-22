@@ -697,9 +697,9 @@
     </section>
 
     <!-- Review -->
-    <section class="section-review p-t-115">
+    {{-- <section class="section-review p-t-115"> --}}
         <!-- - -->
-        <div class="title-review t-center m-b-2">
+        {{-- <div class="title-review t-center m-b-2">
             <span class="tit2 p-l-15 p-r-15">
                 Customers Say
             </span>
@@ -707,10 +707,10 @@
             <h3 class="tit8 t-center p-l-20 p-r-15 p-t-3">
                 Review
             </h3>
-        </div>
+        </div> --}}
 
         <!-- - -->
-        <div class="wrap-slick3">
+        {{-- <div class="wrap-slick3">
             <div class="slick3">
                 @foreach ($comments as $comment)
                     <div class="item-slick3 item1-slick3">
@@ -746,8 +746,8 @@
             </div>
 
             <div class="wrap-slick3-dots m-t-30"></div>
-        </div>
-    </section>
+        </div> --}}
+    {{-- </section> --}}
 
 
     <!-- Video -->
