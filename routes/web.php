@@ -24,6 +24,7 @@ use App\Http\Controllers\RepasConroller;
 use App\Http\Controllers\reservationController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ComndController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -63,6 +64,7 @@ Route::resource('clientComment',clientComment::class);
 Route::resource('cart',cartController::class);
 Route::resource('commande',commandeController::class);
 Route::resource('comnd',ComndController::class);
+Route::resource('reviews',ReviewController::class);
 
 
 
