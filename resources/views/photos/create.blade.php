@@ -5,12 +5,12 @@
         <br><br><br><br>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">ajouter un image</label>
-            <input type="file" class="form-control" name="photo" />
+            <input type="file"  name="photo" />
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">type</label>
+            <label for="exampleFormControlInput1">type</label><br>
             <input type="text" class="form-control" id="exampleFormControlInput1" name='type' placeholder="type">
         </div>
-        <button type="submit" value="envoyer">envoyer</button>
+        <button class="envoyer" type="submit" value="envoyer">envoyer</button>
     </form>
 @endsection

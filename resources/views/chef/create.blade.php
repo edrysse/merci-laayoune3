@@ -13,13 +13,13 @@
             <input type="text" class="form-control" id="exampleFormControlInput1" name='nom' placeholder="name">
         </div>
         <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlInput1" name='bio' placeholder="bio">bio</textarea>
+            <textarea class="form-control" id="exampleFormControlInput1" name='bio' placeholder="bio"></textarea>
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">ajouter un image</label>
-            <input type="file" class="form-control" name="image" />
+            <label for="exampleFormControlTextarea1">ajouter un image</label><br>
+            <input type="file"  name="image" />
         </div>
-        <button type="submit" value="envoyer">envoyer</button>
+        <button class="envoyer" type="submit" value="envoyer">envoyer</button>
     </form>
 @endsection

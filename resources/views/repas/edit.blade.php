@@ -2,7 +2,7 @@
 @section('content')
     <form action="{{ route('repas.update', $repa->id) }}" class="container" method="post" enctype="multipart/form-data">
         @csrf
-        @method('put');
+        @method('put')
         <br />
         <br />
         <br />
@@ -25,15 +25,15 @@
                 value="{{ $repa->type }}" placeholder="type">
         </div>
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">[description]</label>
+            <label for="exampleFormControlTextarea1">description</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description">{{ $repa->description }}</textarea>
         </div>
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">[image]</label>
-            <input value="{{ $repa->image }}" type="file" class="form-control" id="exampleFormControlTextarea1"
+            <label for="exampleFormControlTextarea1">image</label><br>
+            <input value="{{ $repa->image }}" type="file"  id="exampleFormControlTextarea1"
                 name="image" />
 
         </div>
-        <button type="submit" value="envoyer">update</button>
+        <button class="envoyer" type="submit" value="envoyer">update</button>
     </form>
 @endsection

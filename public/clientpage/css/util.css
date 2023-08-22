@@ -3647,9 +3647,9 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 }
 .hov-img-zoom:hover img {
 	-webkit-transform: scale(1.1);
-  	-moz-transform: scale(1.1);
-  	-ms-transform: scale(1.1);
-  	-o-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
@@ -3830,5 +3830,11 @@ RESPONSIVE  RESPONSIVE  RESPONSIVE  RESPONSIVE   RESPONSIVE
 		flex-direction: column;
 		-ms-align-items: center;
 		align-items: center;
+	}
+}
+
+@media (max-width: 576px) {
+	.pic-blo3 {
+		margin:0 auto 2em;
 	}
 }

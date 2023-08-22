@@ -32,7 +32,7 @@
         <br>
         <br>
         <section class="mb-5"
-            style="background-image: url(clientpage/images/28414724.jpg); padding: 5em 0em;">
+            style="background-image: url(clientpage/images/bg-title-page-01.jpg); padding: 5em 0em;">
             <h2 class="tit6 t-center" style="    font-size: 3rem;
             text-align: center;
             text-shadow: 0px 0 20px black;">

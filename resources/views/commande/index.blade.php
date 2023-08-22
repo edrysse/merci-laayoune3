@@ -22,7 +22,7 @@
             <h1 style="color:black">All Commandes</h1>
         </div> --}}
         <section class="mb-5"
-            style="background-image: url(clientpage/images/vecteezy_background-junk-food-related-seamless-pattern-and-background_21428963.jpg); padding: 5em 0em;">
+            style="background-image: url(clientpage/images/bg-title-page-01.jpg); padding: 5em 0em;">
             <h2 class="tit6 t-center" style="    font-size: 3rem;
             text-align: center;
             text-shadow: 0px 0 20px black;">

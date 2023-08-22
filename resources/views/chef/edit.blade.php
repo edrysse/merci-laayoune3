@@ -19,11 +19,11 @@
                 value="{{ $chef->bio }}" placeholder="description">
         </div>
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">[image]</label>
-            <input value="{{ $chef->image }}" type="file" class="form-control" id="exampleFormControlTextarea1"
+            <label for="exampleFormControlTextarea1"></label><br>
+            <input value="{{ $chef->image }}" type="file"  id="exampleFormControlTextarea1"
                 name="image" />
 
         </div>
-        <button type="submit" value="envoyer">update</button>
+        <button class="envoyer" type="submit" value="envoyer">update</button>
     </form>
 @endsection
