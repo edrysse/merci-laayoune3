@@ -7,6 +7,9 @@
 
 
     <style>
+        .checked {
+    color: orange;
+    }
         .card {
             margin-bottom: 24px;
             -webkit-box-shadow: 0 2px 3px #e4e8f0;
@@ -697,9 +700,9 @@
     </section>
 
     <!-- Review -->
-    {{-- <section class="section-review p-t-115"> --}}
+    <section class="section-review bg2-pattern p-t-115">
         <!-- - -->
-        {{-- <div class="title-review t-center m-b-2">
+        <div class="title-review t-center m-b-2">
             <span class="tit2 p-l-15 p-r-15">
                 Customers Say
             </span>
@@ -707,7 +710,7 @@
             <h3 class="tit8 t-center p-l-20 p-r-15 p-t-3">
                 Review
             </h3>
-        </div> --}}
+        </div>
 
         <!-- - -->
         {{-- <div class="wrap-slick3">
@@ -747,7 +750,44 @@
 
             <div class="wrap-slick3-dots m-t-30"></div>
         </div> --}}
-    {{-- </section> --}}
+
+        <div class="container">
+            <div class="row">
+                <div class="splide">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            @foreach ($reviews as $review)
+                                
+                            <div class="col-sm-4 splide__slide m-2">
+                                <div class="card  text-dark">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{$review->nom}}</h5>
+                                        <p class="card-text">{{$review->comment}}</p>
+                                        <span>
+                                            @php
+                                                $i = 0;
+                                            @endphp
+                                            @while ($i < $review->rate)
+                                                <i class="fa fa-star checked"></i>
+                                                @php
+                                                $i++;
+                                                @endphp
+                                            @endwhile
+                                            @for ($i; $i < 5; $i++)
+                                            <i class="fa fa-star"></i>
+                                            @endfor
+                                        </span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Video -->
@@ -809,6 +849,40 @@
             </div>
         </div>
     </section> --}}
+
+
+
+    
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+<script>
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 3,
+        perMove: 1,
+        rewind: true,
+        breakpoints: {
+            640: {
+                perPage: 2,
+                gap: '.7rem',
+            },
+            480: {
+                perPage: 1,
+                gap: '.7rem',
+            },
+        },
+    });
+    splide.mount();
+    
+</script>
+
+
+
+
 
     <script src="assets/js/jquery.js"></script>
     @if ($msg = Session::get('msg'))

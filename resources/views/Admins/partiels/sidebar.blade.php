@@ -160,6 +160,7 @@
             </a>
 
         </li> --}}
+        <br>
         <li class="nav-item menu-items">
             <a class="nav-link" href="repas">
                 <span class="menu-icon">
@@ -240,7 +241,7 @@
                 <span class="menu-title">Reviwes</span>
             </a>
         </li>
-        <br><br><br>
+        
         <li class="nav-item menu-items" style="margin-top: 50px;">
             <span class="barre"></span>
             <a class="nav-link" href="{{ route('logout') }}"
@@ -254,7 +255,7 @@
                     </form>
             
                 <span class="menu-icon">
-                    <i class="fas fa-power-off"></i>
+                    <i class="fas fa-power-off" style="color: #fc424a;"></i>
                 </span>
                 <span class="menu-title">{{ __('Logout') }}</span>
             </a>

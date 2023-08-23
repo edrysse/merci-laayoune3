@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Chef;
+use App\Models\Review;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use App\Models\Comment;
 use App\Models\Reservation;
@@ -21,7 +22,8 @@ class clientIndex extends Controller
         session()->  put('ItemsCount', count($cartItems));
         $comments=Comment::latest()->paginate(5);
         $blogs=Blog::latest()->paginate(3);
-     return view('client.index',compact('comments','blogs', 'cartItems'));
+        $reviews = Review::all();
+     return view('client.index',compact('comments','blogs', 'cartItems', 'reviews'));
     }
 
     /**

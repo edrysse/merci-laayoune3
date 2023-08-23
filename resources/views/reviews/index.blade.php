@@ -5,7 +5,7 @@
 
 <style>
     td .btn {
-        width: 250px;
+        width: 200px;
     }
     .td-btn {
         /* position: absolute; */
@@ -55,13 +55,13 @@
             <tbody>
                 @foreach ($reviews as $item)
                     <tr>
-                        <td style="border-top: 0px; ">
+                        <td data-label="Nom complet" style="border-top: 0px; ">
                             {{ $item->nom }}
                         </td>
                         
-                        <td style="border-top: 0px; ">{{ $item->rate }}</td>
+                        <td data-label="évaluation" style="border-top: 0px; ">{{ $item->rate }}</td>
 
-                        <td style="border-top: 0px; ">
+                        <td data-label="commentaire" style="border-top: 0px; white-space: wrap;"><br>
                             {{ $item->comment }}
                         </td>
 

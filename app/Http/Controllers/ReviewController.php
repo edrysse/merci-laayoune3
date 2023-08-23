@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Review;
-use App\Models\Profil;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class ReviewController extends Controller
