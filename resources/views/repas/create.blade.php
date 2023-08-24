@@ -96,7 +96,7 @@
         font-weight: 600;
         font-size: 15px;
     }
-    button[type="submit"] {
+    .envoyer {
         border-radius: 4px;
         padding: 0 16px;
         height: 40px;
@@ -109,12 +109,12 @@
     }
 
     /* file upload button hover state */
-    button[type="submit"]:hover {
+    .envoyer:hover {
     background-color: #f3f4f6;
     }
 
     /* file upload button active state */
-    button[type="submit"]:active {
+    .envoyer:active {
         background-color: #e5e7eb;
     }
 
@@ -124,6 +124,9 @@
         font-weight: 600;
         font-size: 15px;
     }
+    .ContinueSH:hover {
+    color: #e5e7eb !important;
+}
 </style>
         <div class="form-group">
             <label for="exampleFormControlInput1">nom</label>
@@ -155,6 +158,15 @@
             <label for="exampleFormControlTextarea1">ajouter une image</label><br>
             <input type="file"  name="image" />
         </div>
-        <button class="envoyer" type="submit" value="envoyer">envoyer</button>
+        <div style="display: flex; justify-content: flex-start; align-items: center;">
+            <button class="envoyer" type="submit" value="envoyer">envoyer</button>
+        {{-- <a href="" class="btn envoyer" style="color:#2A3038">retour au menu</a> --}}
+        {{-- <div class="ret">
+            <a href="repas" class="btn btn-link text-muted " style="text-decoration: none; font-size:1em; ">
+                 <span class="ContinueSH" style="color:#ffffff">Retour au menu <i class="mdi mdi-arrow-right me-1"></i></span> </a>
+        </div>  --}}
+        </div>
+        
     </form>
+    
 @endsection
