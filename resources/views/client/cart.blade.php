@@ -1,5 +1,18 @@
 @extends('client.layout')
 @section('content')
+@php
+    function random_strings($length_of_string)
+        {
+        
+            // String of all alphanumeric character
+            $str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        
+            // Shuffle the $str_result and returns substring
+            // of specified length
+            return substr(str_shuffle($str_result),
+                            0, $length_of_string);
+        }
+@endphp
     <base href="/public">
     @include('client.includes.aside')
     <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15"
@@ -70,6 +83,12 @@
                                 ajouter au panier
                             </button>
                         </div> --}}
+                        @if (count($cartItems) == 0)
+                            {{$OID = date('dmYHis').random_strings(1);}}
+                            <input type="hidden" value="{{$OID}}" name="oid">
+                        @endif
+                            
+
                     </form>
 
                 </div>

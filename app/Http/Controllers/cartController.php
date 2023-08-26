@@ -37,7 +37,7 @@ class cartController extends Controller
     public function show(string $id)
     {
       $cartItems=Cart::content();
-      session()->  put('ItemsCount', count($cartItems));  
+      session()->put('ItemsCount', count($cartItems));  
       $repas=Repas::where('id',$id)->first();
       return view('client.cart',compact('repas', 'cartItems'));
     }

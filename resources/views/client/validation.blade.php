@@ -2,6 +2,21 @@
 
 @section('validation')
 
+{{-- @include('client.functions')   --}}
+
+{{-- @php
+    function random_strings($length_of_string)
+        {
+        
+            // String of all alphanumeric character
+            $str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        
+            // Shuffle the $str_result and returns substring
+            // of specified length
+            return substr(str_shuffle($str_result),
+                            0, $length_of_string);
+        }
+@endphp --}}
 
 <style>
     .card {
@@ -330,7 +345,8 @@
                                             </div>
                                         @endif
 
-                                        <form action="{{ route('comnd.store') }}" method="post" id="form">
+                                        {{-- <form action="{{ route('comnd.store') }}" method="post" id="form"> --}}
+                                        <form action="{{ route('checkout.store') }}" method="post" id="form">
                                         @csrf
                                             <div>
                                                 <div class="row">
@@ -373,6 +389,19 @@
                                                     <textarea class="form-control" name="adresse" rows="3" placeholder="Enter full address"></textarea>
                                                 </div>
 
+                                                <div>
+                                                    <input type="radio" name="Pmethod" value="espece">
+                                                    <label for="espece">Paiement à la livraison</label>
+                                                    <input type="radio" name="Pmethod" value="CMI">
+                                                    <label for="CMI">Paiement par carte bancaire</label>
+                                                    <input type="radio" name="Pmethod" value="PayPal">
+                                                    <label for="PayPal">Paiement par PayPal</label>
+                                                    {{-- @php
+                                                        $OID = date('dmYHis').random_strings(1);
+                                                    @endphp --}}
+                                                    
+                                                    <input type="hidden" value="{{ session('oid') }}" name="oid">
+                                                </div>
                                                 {{-- <div class="row">
                                                     <div class="col-lg-4">
                                                         <div class="mb-4 mb-lg-0">
@@ -499,7 +528,7 @@
                                         
                                         
                                         
-                                        </form>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -635,7 +664,7 @@
             <div class="card checkout-order-summary">
                 <div class="card-body">
                     <div class="p-3 bg-light mb-3">
-                        <h5 class="font-size-16 mb-0">Order Summary <span class="float-end ms-2"></span></h5>
+                        <h5 class="font-size-16 mb-0">Commande ID {{ session('oid') }} <span class="float-end ms-2"></span></h5>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-centered mb-0 table-nowrap">
@@ -760,7 +789,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                        
+                        <input type="hidden" value="{{$total + 15}}" name="prix">
+                    </form>
                     </div>
                 </div>
             </div>

@@ -25,6 +25,8 @@ use App\Http\Controllers\reservationController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ComndController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\PayPalController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -65,6 +67,7 @@ Route::resource('cart',cartController::class);
 Route::resource('commande',commandeController::class);
 Route::resource('comnd',ComndController::class);
 Route::resource('reviews',ReviewController::class);
+Route::resource('checkout',CheckoutController::class);
 
 
 
@@ -94,3 +97,15 @@ Route::get('/Menu/starters', [clientMenu::class, 'index'])->name('starters');
 Route::get('/Menu/main', [clientMenu::class, 'index_main'])->name('main');
 Route::get('/Menu/drinks', [clientMenu::class, 'index_drinks'])->name('drinks');
 Route::get('/Menu/desserts', [clientMenu::class, 'index_desserts'])->name('desserts');
+
+
+Route::post('/cmi/callback', [CheckoutController::class, 'callback'])->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class); //notez que vous pouvez utiliser le chemin que vous voulez, mais vous devez utiliser la méthode de rappel (callback) implémentée dans la trait CmiGateway
+Route::post('/cmi/okUrl', [CheckoutController::class, 'okUrl'])->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);// dans la trait CmiGateway, cette méthode est vide pour que vous puissiez implémenter votre propre processus après un paiement réussi
+Route::post('/cmi/failUrl', [CheckoutController::class, 'failUrl'])->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);// la fail url redirigera l'utilisateur vers shopUrl avec une erreur pour que l'utilisateur puisse essayer de payer à nouveau
+Route::get('/url-of-checkout', [CheckoutController::class, 'yourMethod']);// Par exemple, c'est la route où l'utilisateur cliquera sur "Payer maintenant. "( Nous recommandons de l'utiliser comme shopUrl, afin de pouvoir rediriger l'utilisateur en cas d'échec du paiement)
+
+
+// Route::get('payment', [PayPalController::class, 'payment'])->name('payment');
+Route::get('payment', [CheckoutController::class, 'store'])->name('payment');
+Route::get('cancel', [PayPalController::class, 'cancel'])->name('payment.cancel');
+Route::get('payment/success', [PayPalController::class, 'success'])->name('payment.success');

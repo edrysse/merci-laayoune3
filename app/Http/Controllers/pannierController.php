@@ -26,6 +26,10 @@ class pannierController extends Controller
      */
     public function add(Request $request, string $id)
     {
+        if (!is_null($request->oid))
+        {
+            session()->  put('oid', $request->oid);
+        }
         
         $repas = Repas::where('id', $id)->first();
         $cartItem=Cart::add($id,$repas->nom,$request->quantite,$repas->prix,['size'=>'medium'])->associate('App\Models\Repas');

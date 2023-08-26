@@ -1,5 +1,15 @@
 <footer class="bg1">
-    <div class="container p-t-40 p-b-70">
+
+    <style>
+        .icons {
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        }
+    </style>
+    {{-- <div class="container p-t-40 p-b-70"> --}}
+    <div class="container p-t-40 ">
         <div class="row">
             <div class="col-sm-6 col-md-4 p-t-50">
                 <!-- - -->
@@ -7,7 +17,7 @@
                     Contact Us
                 </h4>
 
-                <ul class="m-b-70">
+                <ul class="">
                     <li class="txt14 m-b-14">
                         <i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
                         <div>
@@ -109,6 +119,12 @@
                         </span>
                     </li>
                 </ul> --}}
+                <div class="icons">
+                    <img src="clientpage/images/payment/logo_cmi.png" width="40px" alt="">
+                    <img src="clientpage/images/payment/visa.png" alt="" width="60px">
+                    <img src="clientpage/images/payment/mastercard.png" alt="" width="50px">
+                    <img src="clientpage/images/payment/paypal.png" alt="" width="80px">
+                </div>
             </div>
 
             {{-- <div class="col-sm-6 col-md-4 p-t-50">
@@ -234,6 +250,14 @@
                     by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                 </div>
             </div>
+        </div>
+    </div> --}}
+    {{-- <div class="col-sm-6 col-md-4 p-t-50">
+        <div>
+            <img src="clientpage/images/payment/logo_cmi.png" width="50px" alt="">
+            <img src="clientpage/images/payment/visa.png" alt="" width="80px">
+            <img src="clientpage/images/payment/mastercard.png" alt="" width="70px">
+            <img src="clientpage/images/payment/paypal.png" alt="" width="100px">
         </div>
     </div> --}}
 </footer>

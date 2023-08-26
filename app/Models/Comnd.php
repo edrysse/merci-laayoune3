@@ -8,5 +8,23 @@ use Illuminate\Database\Eloquent\Model;
 class Comnd extends Model
 {
     use HasFactory;
-    protected $fillable=['nom', 'prenom', 'email', 'phone', 'adresse', 'commande'];
+    protected $fillable=['nom', 'prenom', 'email', 'phone', 'adresse', 'commande', 'oid', 'Pmethod', 'state'];
+
+    protected $table = 'comnds';
+    /**
+     * The primary key associated with the table.
+     *
+     * @var string
+     */
+    protected $primaryKey = 'oid';
+
+    /**
+     * Indicates if the model's ID is auto-incrementing.
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
+
+    protected $keyType = 'string';
 }

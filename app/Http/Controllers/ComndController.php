@@ -59,9 +59,9 @@ class ComndController extends Controller
             'email' => $request->email,
             'adresse' => $request->adresse,
             'commande' => $request->commande
-          ]);
+            ]);
 
-          $cartItems = Cart::destroy();
+            $cartItems = Cart::destroy();
         //   $cartItems = [];
         //   $cartItems = null;
 
