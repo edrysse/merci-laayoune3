@@ -241,6 +241,14 @@
                 <span class="menu-title">Reviwes</span>
             </a>
         </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('coupon.index') }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-file-document-box"></i>
+                </span>
+                <span class="menu-title">Coupons</span>
+            </a>
+        </li>
         
         <li class="nav-item menu-items" style="margin-top: 50px;">
             <span class="barre"></span>

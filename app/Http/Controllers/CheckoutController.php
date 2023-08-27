@@ -45,7 +45,8 @@ class CheckoutController extends Controller
             'commande' => 'required',
             'Pmethod' => 'required',
             'oid' => 'required',
-            'prix' => 'required'
+            'prix' => 'required',
+            'Mlivraison' => 'required'
         ]);
         if (is_null(Comnd::where('oid',$request->oid)->first()))
         {
@@ -57,7 +58,10 @@ class CheckoutController extends Controller
             'adresse' => $request->adresse,
             'commande' => $request->commande,
             'Pmethod' => $request->Pmethod,
-            'oid' => $request->oid
+            'oid' => $request->oid,
+            'prix' => $request->prix,
+            'Mlivraison' => $request->Mlivraison,
+            'notes' => $request->notes
             ]);
         }
         else 
@@ -73,7 +77,10 @@ class CheckoutController extends Controller
                     'adresse' => $request->adresse,
                     'commande' => $request->commande,
                     'Pmethod' => $request->Pmethod,
-                    'oid' => $request->oid
+                    'oid' => $request->oid,
+                    'prix' => $request->prix,
+                    'Mlivraison' => $request->Mlivraison,
+                    'notes' => $request->notes
                     ]);
             };
 

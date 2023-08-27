@@ -27,6 +27,7 @@ use App\Http\Controllers\ComndController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\PayPalController;
+use App\Http\Controllers\CouponController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -40,6 +41,10 @@ Route::get('/user/reservations/{id}', [App\Http\Controllers\UserController::clas
 Route::get('/user/profile/{id}', [App\Http\Controllers\UserController::class, 'profile'])->name('profile');
 Route::get('/user/contacts/{id}', [App\Http\Controllers\UserController::class, 'contacts'])->name('contacts');
 Route::get('/pannier/add/{id}', [App\Http\Controllers\pannierController::class, 'add'])->name('add_pannier');
+Route::get('/Coupon', [App\Http\Controllers\CouponController::class, 'index'])->name('coupon.index');
+Route::delete('/Coupon/destroy/{id}', [App\Http\Controllers\CouponController::class, 'destroy'])->name('coupon.destroy');
+Route::get('/Coupon/create', [App\Http\Controllers\CouponController::class, 'store'])->name('coupon.create');
+Route::get('/Coupon/add', [App\Http\Controllers\CouponController::class, 'addCoupon'])->name('coupon.add');
 
 Route::resource('pannier', pannierController::class);
 Route::resource('repas',RepasConroller::class);

@@ -32,36 +32,58 @@
         <table class="table" >
             <thead>
                 <tr>
-                    <th scope="col" style="width: 150px">Nom <br> Prenom</th>
+                    <th scope="col" style="width: 135px">Client info </th>
                     {{-- <th scope="col"></th> --}}
-                    <th scope="col" style="width: 150px;">ِContact</th>
+                    {{-- <th scope="col" style="width: 150px;">ِContact</th> --}}
                     {{-- <th scope="col">Telephone</th> --}}
-                    <th scope="col" style="width:200px;">Adresse</th>
-                    <th scope="col" style="width:230px">Commande</th>
-                    <th scope="col" style="width:150px">Effectuée à</th>
-                    <th scope="col" style="width: 90px;"></th>
+                    <th scope="col" style="width:150px;">Adresse</th>
+                    <th scope="col" style="width:200px">Commande</th>
+                    <th scope="col" style="width:140px">Commande info</th>
+                    <th scope="col" style="width:100px">Payment info</th>
+                    <th scope="col" style="width:150px">Notes</th>
+                    <th scope="col" style="width: 80px;"></th>
                 </tr>
             </thead>
             <tbody>
                 @foreach ($comnds as $item)
                     <tr>
-                        <td data-label="Nom et Prenom" style="white-space: wrap">{{ $item->nom }} <br> <br> {{ $item->prenom }}</td>
+                        <td data-label="Client info" style="white-space: wrap; overflow: auto;"> <br>
+                                        <b>Nom et Prenom :</b> <span style="color: #fff">{{ $item->nom }} {{ $item->prenom }}</span> 
+                            <br> <br> <b>Tel :</b> <span style="color: #fff">{{ $item->phone }}</span>
+                            <br> <br> <b>Email :</b> <span style="color: #fff">{{ $item->email }}</span>
+                        </td>
                         {{-- <td></td> --}}
-                        <td data-label="Contact" style="overflow: auto">{{ $item->phone }} <br><br> {{ $item->email }}</td>
+                        {{-- <td data-label="Contact" style="overflow: auto">{{ $item->phone }} <br><br> {{ $item->email }}</td> --}}
                         {{-- <td>{{ $item->phone }}</td> --}}
-                        <td data-label="Adresse" style="white-space: wrap; overflow: auto;">{{ $item->adresse }}</td>
-                        <td data-label="Commande" style="overflow: auto">
+                        <td data-label="Adresse" style="white-space: wrap; overflow: auto;"><br><span style="color:#fff">{{ $item->adresse }}</span></td>
+                        <td data-label="Commande" style="overflow: auto;"> <br>
                             {{-- {{str_replace("|", '<br>', $item->commande)}}  --}}
                             {{-- {{ $item->commande }} --}}
-                            @php
+                            <span style="color:#fff">
+                                @php
                                 $item->commande;
                                 echo str_replace("|", "<br>", "$item->commande");
-                            @endphp
+                                @endphp
+                            </span>
+                            
                         </td>
 
                         
-                        <td data-label="effectué à">
-                            {{ $item->created_at }}
+                        <td data-label="Commande Info" style="white-space: wrap; overflow: auto;"> <br>
+                            <b>Commande ID :</b> <span style="color: #fff">{{ $item->oid }}</span> <br> <br>
+                            <b>Effectuée à :</b> <span style="color: #fff">{{ $item->created_at }}</span> <br> <br>
+                            <b>Prix :</b> <span style="color: #fff">{{ $item->prix }} DH</span><br> <br>
+                            <b>Mode de livraison :</b> <span style="color: #fff">{{ $item->Mlivraison }}</span> <br> <br>
+                        </td>
+                        <td data-label="Paiement Info" style="white-space: wrap; overflow: auto;"> <br>
+                            <b>Méthode de paiement :</b> <span style="color: #fff">{{ $item->Pmethod }}</span> <br> <br> <br>
+                            <b>état de paiement :</b> <span style="color: #fff">{{ $item->state }}</span> <br> <br>
+                            
+                        </td>
+                        <td data-label="Notes" style="white-space: wrap; overflow: auto; "> <br>
+                            <span style="color:#fff">{{ $item->notes }}</span>
+                            
+                            
                         </td>
                         <td> <a class="btn btn-primary" href="{{ route('comnd.edit', $item->id) }}"><i
                                     class="fa-solid fa-pen-to-square"></i></a>
