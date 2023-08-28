@@ -181,6 +181,11 @@
             <div class="card checkout-order-summary">
                 <div class="card-body">
                     <div class="p-3 bg-light mb-3">
+                        <div class="avatar checkout-icon p-1">
+                            <div class="avatar-title rounded-circle">
+                                <i class="bx bxs-receipt text-white font-size-20"></i>
+                            </div>
+                        </div>
                         <h5 class="font-size-16 mb-0">Mode de livraison <span class="float-end ms-2"></span></h5>
                     </div>
 
@@ -361,7 +366,7 @@
                     <p style="font-size: 0.75em" class="my-3">
                         Vos données personnelles seront utilisées pour le traitement de votre commande, 
                         vous accompagner au cours de votre visite du site web, et pour d’autres raisons décrites dans notre 
-                        <a href="" style="font-size: 1em; font-weight:bold; color:black" class="politique">politique de confidentialité.</a> 
+                        <a href="{{ route('politique') }}" style="font-size: 1em; font-weight:bold; color:black" class="politique">politique de confidentialité.</a> 
                     </p>
                     <div class="valret mt-4">
                         <div class="ret">

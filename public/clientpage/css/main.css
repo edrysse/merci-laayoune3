@@ -1286,6 +1286,20 @@ div.navbarMenu .main_menu>li:hover>a {
 
 }
 
+.mercilogo {
+    width: 500px;
+}
+.mercilogo-autre {
+    width: 400px;
+    
+}
+@media (max-width: 470px)
+{
+    .mercilogo {
+        width: 400px;
+}
+    }
+    
 
 .d-flex {
     display: flex!important;
@@ -1711,9 +1725,9 @@ input[type="date" i] {
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
     position: absolute; 
-    right: 0; 
+    /* right: 0;  */
     margin-right: 20px; 
-    position: fixed;
+    /* position: fixed; */
 }
 .btn-show-sidebar:hover {
     color: #ec1d25;
@@ -1744,18 +1758,36 @@ input[type="date" i] {
     }
 }
 
+
+
+
+
 @media (max-width: 992px) {
-    .wrap_menu {
+    .wrap_menu, .desk {
         display: none;
     }
+
+   
 
     .wrap_header {
         height: 100px;
     }
 }
 
+@media (min-width: 992px) {
+    .logo-mobile {
+        display: none;
+    }
+}
 
-
+.header-mob {
+    margin-top: 15px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
 
 /*[ Sidebar ]
 ///////////////////////////////////////////////////////////

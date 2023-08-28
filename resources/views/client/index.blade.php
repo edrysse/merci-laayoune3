@@ -277,13 +277,25 @@
                         </span>
 
                         <h3 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-                            Asebbane Place
+                            {{-- Merci Laayoune --}}
+                            <img class="mercilogo"  src="clientpage/images/MERCI_IMG/LOGO/Logo-Merci-b1.png" alt="" >
+                        </h3>
+                        <h3 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+                            <div style="    display: flex;
+                            align-items: center;">
+                                <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
+                                <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
+                                <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
+                                <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                                <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
+                            </div>
                         </h3>
 
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
                             <!-- Button1 -->
                             <a href="{{ route('clientReservation.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4">
                                 Look Menu
+                                {{-- <i class="fa fa-angle-double-down"></i> --}}
                             </a>
                         </div>
                     </div>
@@ -297,8 +309,19 @@
                         </span>
 
                         <h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-                            Asebbane Place
+                            <img class="mercilogo"  src="clientpage/images/MERCI_IMG/LOGO/Logo-Merci-b1.png" alt="" >
                         </h2>
+
+                        <h3 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+                            <div style="    display: flex;
+                            align-items: center;">
+                                <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
+                                <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
+                                <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
+                                <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                                <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
+                            </div>
+                        </h3>
 
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
                             <!-- Button1 -->
@@ -319,8 +342,19 @@
 
                         <h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37"
                             data-appear="rotateInUpRight">
-                            Asebbane Place
+                            <img class="mercilogo"  src="clientpage/images/MERCI_IMG/LOGO/Logo-Merci-b1.png" alt="" >
                         </h2>
+
+                        <h3 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+                            <div style="    display: flex;
+                            align-items: center;">
+                                <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
+                                <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
+                                <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
+                                <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                                <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
+                            </div>
+                        </h3>
 
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
                             <!-- Button1 -->

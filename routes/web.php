@@ -114,3 +114,9 @@ Route::get('/url-of-checkout', [CheckoutController::class, 'yourMethod']);// Par
 Route::get('payment', [CheckoutController::class, 'store'])->name('payment');
 Route::get('cancel', [PayPalController::class, 'cancel'])->name('payment.cancel');
 Route::get('payment/success', [PayPalController::class, 'success'])->name('payment.success');
+
+
+
+Route::get('/politique-de-confidentialite', function(){
+    return view('client.politique');
+})->name('politique');

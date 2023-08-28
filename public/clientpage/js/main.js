@@ -113,7 +113,8 @@
     var header = $('header');
     var logo = $(header).find('.logo img');
     var linkLogo1 = $(logo).attr('src');
-    var linkLogo2 = $(logo).data('logofixed');
+    // var linkLogo2 = $(logo).data('logofixed');
+    var linkLogo2 = 'clientpage/images/MERCI_IMG/logo_header/Logo-Merci-b5.png';
 
 
     $(window).on('scroll',function(){
