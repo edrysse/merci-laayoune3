@@ -5,7 +5,7 @@
             <div class="d-flex justify-content-center">
                 <!-- Logo -->
                 <div class="logo desk">
-                    <img src="clientpage/images/MERCI_IMG/logo_header/Logo-Merci-b3.png" alt="" width="100px">
+                    <a href={{ route('clientIndex.index') }}><img src="clientpage/images/MERCI_IMG/logo_header/Logo-Merci-b3.png" alt="" width="100px"></a>
                 </div>
 
                 <!-- Menu -->
@@ -129,7 +129,7 @@
                 </div>
                 
                 <div class="logo logo-mobile">
-                    <img src="clientpage/images/MERCI_IMG/logo_header/Logo-Merci-b3.png" alt="" width="100px">
+                    <a href={{ route('clientIndex.index') }}><img src="clientpage/images/MERCI_IMG/logo_header/Logo-Merci-b3.png" alt="" width="100px"></a>
                 </div>
 
 

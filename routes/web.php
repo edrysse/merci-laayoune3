@@ -98,10 +98,10 @@ Route::get('/test2', function(){
 Route::get('/commande', [ComndController::class, 'showcomnds'])->name('showcomnds');
 
 
-Route::get('/Menu/starters', [clientMenu::class, 'index'])->name('starters');
-Route::get('/Menu/main', [clientMenu::class, 'index_main'])->name('main');
-Route::get('/Menu/drinks', [clientMenu::class, 'index_drinks'])->name('drinks');
-Route::get('/Menu/desserts', [clientMenu::class, 'index_desserts'])->name('desserts');
+// Route::get('/Menu/starters', [clientMenu::class, 'index'])->name('starters');
+// Route::get('/Menu/main', [clientMenu::class, 'index_main'])->name('main');
+// Route::get('/Menu/drinks', [clientMenu::class, 'index_drinks'])->name('drinks');
+// Route::get('/Menu/desserts', [clientMenu::class, 'index_desserts'])->name('desserts');
 
 
 Route::post('/cmi/callback', [CheckoutController::class, 'callback'])->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class); //notez que vous pouvez utiliser le chemin que vous voulez, mais vous devez utiliser la méthode de rappel (callback) implémentée dans la trait CmiGateway
@@ -120,3 +120,11 @@ Route::get('payment/success', [PayPalController::class, 'success'])->name('payme
 Route::get('/politique-de-confidentialite', function(){
     return view('client.politique');
 })->name('politique');
+
+
+
+Route::get('/Menu/Standard-Drinks', [clientMenu::class, 'index'])->name('standard-drinks');
+Route::get('/Menu/Sucre', [clientMenu::class, 'index_sucre'])->name('sucre');
+Route::get('/Menu/Sale', [clientMenu::class, 'index_sale'])->name('sale');
+Route::get('/Menu/Dessert', [clientMenu::class, 'index_dessert'])->name('Dessert');
+Route::get('/Menu/Sandwich', [clientMenu::class, 'index_sandwich'])->name('sandwich');

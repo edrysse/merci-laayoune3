@@ -1192,19 +1192,28 @@ div.navbarMenu .main_menu>li:hover>a {
 
 /*----------------------------------*/
 
-.tit-mainmenu {
+/* .tit-mainmenu {
     display: none;
-}
+} */
 
 /*titre categories*/
-@media (max-width:490px) {
+/* @media (max-width:490px) {
     .tit-mainmenu {
         display: block;
         left: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
     }
-}
+} */
+
+
+.tit-mainmenu {
+        /* display: block;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute; */
+        text-align: center;
+    }
 /*----------------------*/
 /*[ LOADDING ]
 ///////////////////////////////////////////////////////////
@@ -2540,7 +2549,7 @@ body {
 
 @media (max-width: 576px) {
     .line-item-mainmenu {
-        display: none;
+        /* display: none; */
     }
 
     .price-item-mainmenu {

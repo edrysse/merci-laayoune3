@@ -14,7 +14,7 @@
     <!--===============================================================================================-->
     {{-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> --}}
     <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href={{ asset('clientpage/images/icons/favicon.png') }} />
+    <link rel="icon" type="image/png" href={{ asset('clientpage/images/MERCI_IMG/logo_header/Logo-Merci-b3.png') }} />
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href={{ asset('clientpage/vendor/bootstrap/css/bootstrap.min.css') }}>
     <!--===============================================================================================-->

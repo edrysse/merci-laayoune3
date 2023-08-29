@@ -35,7 +35,7 @@ class RepasConroller extends Controller
             'nom' => 'required',
             'prix' => 'required',
             'type' => 'required',
-            'description' => 'required',
+            // 'description' => 'required',
             'image'=>'required|image'
 
         ]);
@@ -51,7 +51,8 @@ class RepasConroller extends Controller
             'image' => 'upload/photos/'.$newimage
         ]);
         $profile=Profil::where('id_user',Auth::id())->first();
-        return redirect()->route('repas.index')->with('succes', 'added succeffly')->with('profile',$profile);
+        // return redirect()->route('repas.index')->with('succes', 'added succeffly')->with('profile',$profile);
+        return redirect()->back()->with('succes', 'added succeffly')->with('profile',$profile);
     }
 
     public function show(Repas $repa)
@@ -72,7 +73,7 @@ class RepasConroller extends Controller
         'nom' => 'required',
         'prix' => 'required',
         'type' => 'required',
-        'description' => 'required',
+        // 'description' => 'required',
         'image'=>'required|image'
 
     ]);

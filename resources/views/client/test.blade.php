@@ -264,3 +264,32 @@
 
 
 @endsection
+
+
+
+<div class="wrap-item-mainmenu p-b-22">
+    <h3 class="tit-mainmenu tit10 p-b-25" style="color:brown">
+        Main
+    </h3>
+    @foreach ($main as $item)
+        <!-- Item mainmenu -->
+        <div class="item-mainmenu m-b-36">
+            <div class="flex-w flex-b m-b-3">
+                <a href="{{ route('cart.show', $item->id) }}" class="name-item-mainmenu txt21">
+
+                    {{ $item->nom }}
+                </a>
+
+                <div class="line-item-mainmenu bg3-pattern"></div>
+
+                <div class="price-item-mainmenu txt22">
+                    {{ $item->prix }}$
+                </div>
+            </div>
+
+            <span class="info-item-mainmenu txt23">
+                {{ $item->description }}
+            </span>
+        </div>
+    @endforeach
+</div>

@@ -3047,7 +3047,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .tit10 {
 	font-family: Poppins;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 35px;
 	line-height: 1.2;
 	color: #222222;
 	text-transform: uppercase;
@@ -3057,6 +3057,10 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 @media (max-width: 567px){
 	.tit1, .tit2, .tit3, .tit4, .tit5, .tit6, .tit7, .tit8, .tit9, .tit10 {
 		font-size: 30px;
+	}
+
+	.tit10 {
+		font-size: 25px;
 	}
 }
 /*[ Text ]
