@@ -1,7 +1,16 @@
 <head>
-    <title>Asebbane Restaurant</title>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{-- <title>Merci Laayoune</title>
+    <meta name="description" content="Merci Laayoune est un élégant café salon de thé avec une charmante terrasse 
+        située au cœur de la ville de Laayoune. Notre ambiance chaleureuse et notre menu raffiné vous invitent à vous
+        détendre et à savourer des moments de convivialité. Profitez de notre vaste sélection de boissons chaudes et froides, 
+        de délicieuses pâtisseries fraîchement préparées et de plats légers. Que ce soit pour une pause délicieuse ou une 
+        rencontre entre amis, Merci Laayoune vous accueille avec un service attentionné et un cadre accueillant."> --}}
+        @yield('meta')
+
+    
     <!--===============================================================================================-->
     {{-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> --}}
     <!--===============================================================================================-->

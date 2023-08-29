@@ -1,4 +1,19 @@
 @extends('client.layout')
+
+
+@section('meta')
+<title>Merci Laayoune - Pannier</title>
+<meta name="description" content="Consultez votre panier au Merci Laayoune pour voir les articles que vous avez choisis. Visualisez les produits, 
+leurs prix et les quantités sélectionnées avant de passer à l'étape suivante de votre expérience de commande.">
+    <meta name="keywords" content="Panier d'achats, Articles choisis, Prix produits, Quantités, Expérience de commande."> 
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Merci Laayoune - Pannier">
+    <meta property="og:url" content="https://www.mercilaayoune.com/pannier">
+    <meta property="og:site_name" content="Merci Laayoune">
+@endsection
+
+
 @section('content')
     <base href="/public">
     @include('client.includes.aside')

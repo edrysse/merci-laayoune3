@@ -1,4 +1,21 @@
 @extends('client.layout')
+
+
+@section('meta')
+<title>Merci Laayoune - Menu</title>
+<meta name="description" content="Merci Laayoune est un élégant café salon de thé avec une charmante terrasse 
+    située au cœur de la ville de Laayoune. Notre ambiance chaleureuse et notre menu raffiné vous invitent à vous
+    détendre et à savourer des moments de convivialité. Profitez de notre vaste sélection de boissons chaudes et froides, 
+    de délicieuses pâtisseries fraîchement préparées et de plats légers. Que ce soit pour une pause délicieuse ou une 
+    rencontre entre amis, Merci Laayoune vous accueille avec un service attentionné et un cadre accueillant.">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Merci Laayoune - Menu">
+    <meta property="og:url" content="https://www.mercilaayoune.com/clientMenu">
+    <meta property="og:site_name" content="Merci Laayoune">
+@endsection
+
+
 @section('content')
     @include('client.includes.aside')
     <base href="/public">

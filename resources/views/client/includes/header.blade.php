@@ -13,7 +13,7 @@
                     <nav class="menu">
                         <ul class="main_menu">
                             <li>
-                                <a href={{ route('clientIndex.index') }}>Home</a>
+                                <a href={{ route('clientIndex.index') }}>Accueil</a>
                             </li>
 
                             <li>
@@ -21,15 +21,15 @@
                             </li>
 
                             <li>
-                                <a href={{ route('clientReservation.index') }}>Reservation</a>
+                                <a href={{ route('clientReservation.index') }}>Réservation</a>
                             </li>
 
                             <li>
-                                <a href={{ route('clientGalery.index') }}>Gallery</a>
+                                <a href={{ route('clientGalery.index') }}>Galerie</a>
                             </li>
 
                             <li>
-                                <a href={{ route('clientAbout.index') }}>About</a>
+                                <a href={{ route('clientAbout.index') }}>à propos</a>
                             </li>
 
                             {{-- <li>

@@ -14,7 +14,7 @@
             <div class="col-sm-6 col-md-4 p-t-50">
                 <!-- - -->
                 <h4 class="txt13 m-b-33">
-                    Contact Us
+                    Contactez-nous
                 </h4>
 
                 <ul class="">
@@ -159,7 +159,7 @@
             <div class="col-sm-6 col-md-4 p-t-50">
                 <!-- - -->
                 <h4 class="txt13 m-b-38">
-                    Gallery
+                    Gallerie
                 </h4>
 
                 <!-- Gallery footer -->

@@ -1,4 +1,20 @@
 @extends('client.layout')
+
+
+@section('meta')
+<title>Merci Laayoune - Reservation</title>
+<meta name="description" content="Réservez votre table au Merci Laayoune et préparez-vous à vivre une expérience gustative exceptionnelle dans notre café 
+salon de thé. Choisissez votre date, heure et nombre de convives pour profiter de notre ambiance accueillante et de notre délicieux menu.">
+<meta name="keywords" content="Réservation table, Réserver café Laayoune, Expérience gustative, Ambiance accueillante, 
+Menu délicieux, Nombre de convives, Café salon de thé.">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Merci Laayoune - Reservation">
+    <meta property="og:url" content="https://www.mercilaayoune.com/clientReservation">
+    <meta property="og:site_name" content="Merci Laayoune">
+@endsection
+
+
 @section('content')
     @include('client.includes.aside')
     <base href="/public">

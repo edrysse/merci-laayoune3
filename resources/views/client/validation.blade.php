@@ -1,5 +1,19 @@
 @extends('client.command')
 
+
+@section('meta')
+<title>Merci Laayoune - Commande</title>
+<meta name="description" content="Préparez-vous à finaliser votre commande au Merci Laayoune. Remplissez les informations nécessaires, 
+telles que les détails de livraison et les préférences spéciales, pour que nous puissions vous offrir un service personnalisé et répondre à vos attentes.">
+<meta name="keywords" content="Validation commande, Informations de livraison, Préférences spéciales, Service personnalisé, Café Laayoune commande."> 
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Merci Laayoune - Commande">
+    <meta property="og:url" content="https://www.mercilaayoune.com/pannier">
+    <meta property="og:site_name" content="Merci Laayoune">
+@endsection
+
+
 @section('validation')
 <link rel="stylesheet" type="text/css" href={{ asset('clientpage/css/validation.css') }}>
 

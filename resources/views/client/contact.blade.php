@@ -1,4 +1,18 @@
 @extends('client.layout')
+
+@section('meta')
+<title>Merci Laayoune - Contact</title>
+<meta name="description" content="Nous sommes là pour vous écouter. Utilisez nos coordonnées pour nous contacter au Merci Laayoune. Que ce soit pour des questions, 
+des commentaires ou des réservations spéciales, n'hésitez pas à entrer en contact avec notre équipe dévouée.">
+    <meta name="keywords" content="Contacter Merci Laayoune, Coordonnées, Questions, Commentaires, Réservations spéciales, Équipe dévouée."> 
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Merci Laayoune - Contact">
+    <meta property="og:url" content="https://www.mercilaayoune.com/clientContact">
+    <meta property="og:site_name" content="Merci Laayoune">
+@endsection
+
+
 @section('content')
     @include('client.includes.aside')
     <base href="/public">

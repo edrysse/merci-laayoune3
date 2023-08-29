@@ -1,4 +1,18 @@
 @extends('client.layout')
+
+
+@section('meta')
+<title>Merci Laayoune - Galerie</title>
+<meta name="description" content="Découvrez l'atmosphère unique du Merci Laayoune à travers notre galerie de photos. Explorez nos espaces intérieurs 
+élégamment aménagés et notre terrasse en plein air. Plongez dans notre univers visuel et laissez-vous séduire par l'esthétique de notre café salon de thé.">
+    <meta name="keywords" content="Galerie photos, Café Laayoune en images, Espaces intérieurs, Terrasse en plein air, Esthétique, Café salon de thé ambiance.">    
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Merci Laayoune - Galerie">
+    <meta property="og:url" content="https://www.mercilaayoune.com/clientGalery">
+    <meta property="og:site_name" content="Merci Laayoune">
+@endsection
+
 @section('content')
     <base href="/public">
     @include('client.includes.aside')
