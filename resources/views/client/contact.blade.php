@@ -116,7 +116,7 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
 
         <div class="container">
             <h3 class="tit7 t-center p-b-62 p-t-105">
-                Send us a Message
+                ENVOIEZ-NOUS UN MESSAGE
             </h3>
 
             <form action="{{ route('createContact') }}" class="wrap-form-reservation size22 m-l-r-auto" method="patch">
@@ -125,11 +125,11 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
                     <div class="col-md-4">
                         <!-- Name -->
                         <span class="txt9">
-                            Name
+                            Nom complet
                         </span>
 
                         <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
-                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Name">
+                            <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Nom complet">
                         </div>
                     </div>
 
@@ -148,12 +148,12 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
                     <div class="col-md-4">
                         <!-- Phone -->
                         <span class="txt9">
-                            Phone
+                            Telephone
                         </span>
 
                         <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
                             <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone"
-                                placeholder="Phone">
+                                placeholder="Telephone">
                         </div>
                     </div>
 

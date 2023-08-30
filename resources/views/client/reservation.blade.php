@@ -319,7 +319,7 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
 
     </section>
     <!-- Reservation -->
-    <section class="section-reservation bg1-pattern p-t-100 p-b-113">
+    <section class="section-reservation bg1-pattern p-t-100 p-b-45">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 p-b-30">
@@ -329,7 +329,7 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
                         </span>
 
                         <h3 class="tit3 t-center m-b-35 m-t-2">
-                            Book table
+                            réserver une table
                         </h3>
                     </div>
                     {{-- @if ($msg = Session::get('msg'))
@@ -362,7 +362,7 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
                             <div class="col-md-4">
                                 <!-- Time -->
                                 <span class="txt9">
-                                    Time
+                                    Horaire
                                 </span>
 
                                 <div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
@@ -394,7 +394,7 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
                             <div class="col-md-4">
                                 <!-- People -->
                                 <span class="txt9">
-                                    People
+                                    Personnes
                                 </span>
 
                                 <div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
@@ -421,24 +421,24 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
                             <div class="col-md-4">
                                 <!-- Name -->
                                 <span class="txt9">
-                                    Name
+                                    Nom complet
                                 </span>
 
                                 <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                     <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="nom"
-                                        placeholder="Name">
+                                        placeholder="Nom complet">
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <!-- Phone -->
                                 <span class="txt9">
-                                    Phone
+                                    Telephone
                                 </span>
 
                                 <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                     <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone"
-                                        placeholder="Phone">
+                                        placeholder="Telephone">
                                 </div>
                             </div>
 
@@ -466,23 +466,41 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
                 </div>
             </div>
 
+
+
+            {{-- <div class="size23 w-full-md p-t-40 p-r-30 p-r-0-md"> --}}
+            <div class="m-t-80" style="display: flex;
+            flex-direction: column;
+            align-items: center;">
+                <h4 class="txt5 m-b-18">
+                    
+                    RÉSERVER autrement
+                </h4>
+
+                <p class="size25">
+
+                    Appelez <span class="txt24"> 06 36 69 30 87</span> (7j/7 et de 8h à 20h) <br>
+                    Ou contactez <span class="txt24">Contact@mercilaayoune.com</span>
+
+                </p>
+            </div>
+{{-- 
             <div class="info-reservation flex-w p-t-80">
                 <div class="size23 w-full-md p-t-40 p-r-30 p-r-0-md">
                     <h4 class="txt5 m-b-18">
-                        Reserve by Phone
+                        
+                        RÉSERVER autrement
                     </h4>
 
                     <p class="size25">
-                        Call us
-                        Call <span class="txt24"> 06 36 69 30 87</span> 7/7days a week and from 8 a.m. to 8 p.m. (free
-                        service + price of a call).
-                        If you wish to call from abroad, dial <span class="txt24">(001) 345 6889</span> (cost of an
-                        international call).
+
+                        Appelez le <span class="txt24"> 06 36 69 30 87</span> (7j/7 et de 8h à 20h). <br>
+                        Ou contactez <span class="txt24">Contact@mercilaayoune.com</span>
 
                     </p>
-                </div>
+                </div> --}}
 
-                <div class="size24 w-full-md p-t-40">
+                {{-- <div class="size24 w-full-md p-t-40">
                     <h4 class="txt5 m-b-18">
                         For Event Booking
                     </h4>
@@ -492,9 +510,9 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
                         <span class="txt24">(001) 345 6889</span>
 
                     </p>
-                </div>
+                </div> --}}
 
-            </div>
+            {{-- </div> --}}
         </div>
     </section>
 

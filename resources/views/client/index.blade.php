@@ -281,6 +281,61 @@
         max-width: 50%;
         flex: 0 0 50%;
         }
+
+
+        /* .user {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        }
+
+        .circular--square {
+        border-radius: 50%;
+        }
+
+        .circular--landscape {
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        }
+
+        .circular--landscape img {
+        width: auto;
+        height: 100%;
+        margin-left: -50px;
+        }
+
+        .circular--portrait {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        }
+
+        .circular--portrait img {
+        width: 100%;
+        height: auto;
+        } */
+
+        .user {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+                }
+
+        .user-border {
+            width: 90px;
+            height: 90px;
+        }
     </style>
 
 
@@ -778,7 +833,7 @@
         <!-- - -->
         <div class="title-review t-center m-b-2">
             <span class="tit2 p-l-15 p-r-15">
-                Customers Say
+                Les clients disent
             </span>
 
             <h3 class="tit8 t-center p-l-20 p-r-15 p-t-3">
@@ -835,22 +890,52 @@
                             <div class="col-sm-4 splide__slide m-2">
                                 <div class="card  text-dark">
                                     <div class="card-body">
-                                        <h5 class="card-title">{{$review->nom}}</h5>
+                                        {{-- <div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t"> --}}
+                                            <div style="    display: flex;
+                                            align-items: center;
+                                            flex-direction: column;
+                                        }" class="mb-1">
+                                                 {{-- <div class="pic-blo5 size11 bo4 wrap-cir-pic hov-img-zoom "> --}}
+                                                 <div class="pic-blo5 bo4 wrap-cir-pic hov-img-zoom user-border" >
+                                                    @if (is_null($review->image))
+                                                    
+                                                        <img src="clientpage/images/profile.webp" alt="{{ $review->image }}" class="user">
+                                                    </td>
+                                                    
+                                                        
+                                                    @else
+                                                    
+                                                    <img src="{{ $review->image }}" alt="{{ $review->image }}" class="user">
+                                                </td>
+                        
+                                                    @endif
+                                                </div>
+                                                <div class="my-2" style="display: flex;
+                                                flex-direction: column;
+                                                align-items: center;">
+                                                    <h5 class="card-title">{{$review->nom}}</h5>
+                                                    <span>
+                                                        @php
+                                                            $i = 0;
+                                                        @endphp
+                                                        @while ($i < $review->rate)
+                                                            <i class="fa fa-star checked"></i>
+                                                            @php
+                                                            $i++;
+                                                            @endphp
+                                                        @endwhile
+                                                        @for ($i; $i < 5; $i++)
+                                                        <i class="fa fa-star"></i>
+                                                        @endfor
+                                                    </span>
+                                                </div>
+                                                
+                                            </div>
+                                       
+                                        
+                                        
                                         <p class="card-text">{{$review->comment}}</p>
-                                        <span>
-                                            @php
-                                                $i = 0;
-                                            @endphp
-                                            @while ($i < $review->rate)
-                                                <i class="fa fa-star checked"></i>
-                                                @php
-                                                $i++;
-                                                @endphp
-                                            @endwhile
-                                            @for ($i; $i < 5; $i++)
-                                            <i class="fa fa-star"></i>
-                                            @endfor
-                                        </span>
+                                        
                                         
                                     </div>
                                 </div>
@@ -940,7 +1025,7 @@
         perMove: 1,
         rewind: true,
         breakpoints: {
-            640: {
+            992: {
                 perPage: 2,
                 gap: '.7rem',
             },
