@@ -33,9 +33,25 @@ class ReviewController extends Controller
             'nom' => 'required',
             'rate' => 'required',
             'comment' => 'required',
+            
         ]);
 
-        $review=Review::create([
+        if (!is_null($request->file('image')))
+        {
+            $image=$request->file('image');
+            $newphoto=uniqid().$image->getClientOriginalName();
+            $image->move(public_path('upload/photos'),$newphoto);
+
+            Review::create([
+                'nom' =>$request->nom,
+                'rate' => $request->rate,
+                'comment' => $request->comment,
+                'image' => 'upload/photos/'.$newphoto
+              ]);
+        }
+        
+
+        Review::create([
             'nom' =>$request->nom,
             'rate' => $request->rate,
             'comment' => $request->comment
@@ -66,9 +82,19 @@ class ReviewController extends Controller
     public function update(Request $request, Review $review)
     {
 
-        $review->update($request->all());
+        if($request->hasfile('image')){
+            $image=$request->image;
+            $newimage=uniqid().$image->getClientOriginalName();
+            $image->move(public_path('upload/photos'),$newimage);
+            $review->image='upload/photos/'.$newimage;
+       }
 
-        return redirect()->route('reviews.index');
+        // $review->update($request->all());
+
+        $review->save();
+        $reviews = Review::all();
+
+        return redirect()->route('reviews.index')->with('reviews', $reviews);
     }
 
     /**

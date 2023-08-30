@@ -106,6 +106,21 @@ class clientMenu extends Controller
         $Brunch = Repas::where('type','Brunch')->get();
         return view('client.menu.sandwich',compact('Sandwich','Petits_Déjeuners', 'Brunch', 'cartItems'));
     }
+    public function index_Gdrinks()
+    {
+        $cartItems=Cart::content();
+        session()->  put('ItemsCount', count($cartItems));
+        $Nos_Jus = Repas::where('type','Nos Jus')->get();
+        $Cocktail = Repas::where('type','Cocktail')->get();
+        $Nos_Smoothies = Repas::where('type','Nos Smoothies')->get();
+        $Milk_shakes = Repas::where('type','Milk shakes')->get();
+        $Mojito = Repas::where('type','Mojito')->get();
+        $Detox = Repas::where('type','Detox')->get();
+        $Boissons_Fraiches = Repas::where('type','Boissons Fraiches')->get();
+        $Petits_Déjeuners = Repas::where('type','Petits Déjeuners')->get();
+        $Brunch = Repas::where('type','Brunch')->get();
+        return view('client.menu.gold-drinks',compact('Nos_Jus', 'Cocktail', 'Nos_Smoothies', 'Milk_shakes', 'Mojito', 'Detox', 'Boissons_Fraiches', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
+    }
 
 
 

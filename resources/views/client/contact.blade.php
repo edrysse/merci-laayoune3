@@ -272,7 +272,7 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
                         
 
                         <span class="txt23 size38" >
-                            En face hotel nagjir, Mahaj mohamed VI, Ave Essmara, Laayoune 70000
+                            En face hotel nagjir, Av Es-smara, Laayoune
                         </span>
                     </div>
 
@@ -293,12 +293,16 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
                         </div>
                         
 
-                        <span class="txt23 size38">
-                            Contact@mercilaayoune.com
-                        </span>
-                        <span class="txt23 size38">
-                            www.mercilaayoune.com
-                        </span>
+                        <div style="    display: flex;
+                        flex-direction: column;">
+                            <span class="txt23 size38">
+                                Contact@mercilaayoune.com
+                            </span>
+                            <span class="txt23 size38">
+                                www.mercilaayoune.com
+                            </span>
+                        </div>
+                        
                     </div>
 
 

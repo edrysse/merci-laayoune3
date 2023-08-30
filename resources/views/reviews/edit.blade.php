@@ -29,6 +29,11 @@
             <input type="text" class="form-control" id="exampleFormControlInput1" name='comment'
                 value="{{ $review->comment }}" placeholder="type">
         </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label><br>
+            <input value="{{ $review->image }}" type="file"  id="exampleFormControlTextarea1"name="image" />
+
+        </div>
         <button class="envoyer" type="submit" value="envoyer">envoyer</button>
     </form>
 @endsection

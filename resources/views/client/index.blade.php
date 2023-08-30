@@ -312,7 +312,7 @@
 
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
                             <!-- Button1 -->
-                            <a href="{{ route('clientReservation.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4">
+                            <a href="{{ route('clientMenu.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4">
                                 Look Menu
                                 {{-- <i class="fa fa-angle-double-down"></i> --}}
                             </a>
@@ -344,7 +344,7 @@
 
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
                             <!-- Button1 -->
-                            <a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
+                            <a href="{{ route('clientMenu.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4">
                                 Look Menu
                             </a>
                         </div>
@@ -427,15 +427,36 @@
 
     <!-- Intro -->
     <section class="section-intro">
-        <div class="header-intro parallax100 t-center p-t-135 p-b-158"
+        <div class="header-intro parallax100 t-center p-t-50 p-b-50"
             style="background-image: url(clientpage/images/bg-intro-01.jpg);">
             <span class="tit2 p-l-15 p-r-15">
                 Discover
             </span>
 
-            <h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
+            {{-- <h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
                 Asebbane Place
-            </h3>
+            </h3> --}}
+
+            <div style="    display: flex;
+            flex-direction: column;
+            align-items: center;">
+                <div class="mb-4" >
+                {{-- Merci Laayoune --}}
+                <img class="mercilogo-autre"  src="clientpage/images/MERCI_IMG/LOGO/Logo-Merci-b1.png" alt="" >
+            </div>
+            
+            <div style="    display: flex;
+            align-items: center;">
+                <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
+                <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
+                <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
+                <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
+            </div>
+            </div>
+
+            
+
         </div>
 
         <div class="content-intro bg-white p-t-77 p-b-133">

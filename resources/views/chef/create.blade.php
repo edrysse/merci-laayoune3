@@ -17,7 +17,7 @@
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlTextarea1">ajouter un image</label><br>
+            <label for="exampleFormControlTextarea1">ajouter une image</label><br>
             <input type="file"  name="image" />
         </div>
         <button class="envoyer" type="submit" value="envoyer">envoyer</button>

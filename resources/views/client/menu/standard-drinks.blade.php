@@ -139,13 +139,18 @@
 
     <section class="section-mainmenu p-b-70 bg1-pattern">
         <nav style=" width: 50%; margin: 0 auto 30px; padding-top: 30px; padding-bottom: 30px;" class="navMenu">
-            <ul class="main_menu">
+            <ul class="main_menu" style="white-space: nowrap;">
+
                 <li>
-                    <a href={{ route('standard-drinks') }} style="color: #ec1d25; font-weight:900">Standard drinks</a>
+                    <a href={{ route('standard-drinks') }} style="color: #ec1d25; font-weight:900">S-drinks</a>
+                </li>
+
+                <li>
+                    <a href={{ route('Gdrinks') }}>G-drinks</a>
                 </li>
     
                 <li>
-                    <a href={{ route('sandwich') }}>Club Sandwich</a>
+                    <a href={{ route('sandwich') }}>Sandwich</a>
                 </li>
     
                 <li>
@@ -159,19 +164,21 @@
                 <li>
                     <a href={{ route('Dessert') }}>Dessert</a>
                 </li>
-    
+                
+
         </nav>
         <div class="dropdown" style="width: 50%; margin: auto; padding-top: 50px; padding-bottom: 50px;">
             <button style="left: 50%; transform: translate(-50%, -50%); position: absolute;" class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               Catégories
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href={{ route('standard-drinks') }}>Standard drinks</a></li>
-              <li><a class="dropdown-item" href={{ route('sandwich') }}>Club Sandwich</a></li>
-              <li><a class="dropdown-item" href={{ route('sucre') }}>Sucre</a></li>
-              <li><a class="dropdown-item" href={{ route('sale') }}>Salé</a></li>
-              <li><a class="dropdown-item" href={{ route('Dessert') }}>Dessert</a></li>
-            </ul>
+                <li><a class="dropdown-item" href={{ route('standard-drinks') }}>S-drinks</a></li>
+                <li><a class="dropdown-item" href={{ route('Gdrinks') }}>G-drinks</a></li>
+                <li><a class="dropdown-item" href={{ route('sandwich') }}>Sandwich</a></li>
+                <li><a class="dropdown-item" href={{ route('sucre') }}>Sucre</a></li>
+                <li><a class="dropdown-item" href={{ route('sale') }}>Salé</a></li>
+                <li><a class="dropdown-item" href={{ route('Dessert') }}>Dessert</a></li>
+              </ul>
     </div>
         <div class="container">
             

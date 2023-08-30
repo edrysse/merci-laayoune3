@@ -29,6 +29,11 @@
             <label for="exampleFormControlTextarea1">Commentaire</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comment"></textarea>
         </div>
+        
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">ajouter une image</label><br>
+            <input type="file"  name="image" />
+        </div>
 
         <button class="envoyer" type="submit" value="envoyer">envoyer</button>
         </form>

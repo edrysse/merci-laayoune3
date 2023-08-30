@@ -19,6 +19,10 @@
 @section('content')
     @include('client.includes.aside')
     <base href="/public">
+
+
+
+
     <!-- Title Page -->
     <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15"
         style="background-image: url(clientpage/images/bg-title-page-03.jpg);">
@@ -73,16 +77,46 @@
 
     <!-- Video -->
     <section class="section-video parallax100" style="background-image: url(clientpage/images/header-menu-01.jpg);">
-        <div class="content-video t-center p-t-225 p-b-250">
+        <div style="display: flex;
+        flex-direction: column;
+        align-items: center;" class=" p-t-70 p-b-70">
 
 
-            <div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal"
-                data-target="#modal-video-01">
+            {{-- <div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal"
+                data-target="#modal-video-01"> --}}
+
+                <img id="menu-w" class="menu-w" style="width:180px;" src="clientpage/images/menu-w.svg" alt="" >
+                <img id="menu-r" class="menu-r"  style="width:180px; display:none;" src="clientpage/images/menu-r.svg" alt="" >
+
+                <div class="mt-3">
+                    <!-- Button1 -->
+                    <a href="{{ route('clientMenu.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4 btn-menu" onmousemove="alter1();" onmouseout="alter2();">
+                        Look Menu
+                    </a>
+                </div>
+
 
             </div>
         </div>
     </section>
 
+    <script>
+        var menu_w = document.getElementById('menu-w');
+        var menu_r = document.getElementById('menu-r');
+
+        function alter1() 
+        {
+                menu_w.style.display = "none";
+                menu_r.style.display = "inline";
+
+        }
+        function alter2() 
+        {
+                menu_w.style.display = "inline";
+                menu_r.style.display = "none";
+
+        }
+    </script>
 
     <!-- Delicious & Romantic-->
     <section class="bg1-pattern p-t-120 p-b-105">

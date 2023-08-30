@@ -46,6 +46,7 @@
         <table class="table" >
             <thead>
                 <tr>
+                    <th scope="col">photos</th>
                     <th scope="col">Nom complet</th>
                     <th scope="col">évaluation</th>
                     <th scope="col">commentaire</th>
@@ -55,6 +56,22 @@
             <tbody>
                 @foreach ($reviews as $item)
                     <tr>
+                        <td data-label="Nom complet" style="border-top: 0px; ">
+                            @if (is_null($item->image))
+                            
+                                <img src="clientpage/images/profile.webp" alt="{{ $item->image }}" class="img-tumbnail"
+                            style=" width:100px;
+                            height:100px;!important"></td>
+                            
+                                
+                            @else
+                               
+                            <img src="{{ $item->image }}" alt="{{ $item->image }}" class="img-tumbnail"
+                            style=" width:100px;
+                            height:100px;!important"></td>
+  
+                            @endif
+                        </td>
                         <td data-label="Nom complet" style="border-top: 0px; ">
                             {{ $item->nom }}
                         </td>
