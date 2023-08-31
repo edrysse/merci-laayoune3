@@ -55,7 +55,7 @@
         
     </section>
 
-    <section class="section-contact bg1-pattern p-t-90">
+    <section class="section-contact mb-5 p-t-90">
 
         <div class="container">
         
@@ -330,7 +330,9 @@ Nous utilisons vos données pour fournir et améliorer le service. En utilisant 
 
         Par email: Contact@mercilaayoune.com
         </p>
-        <div>
+
+
+        </div>
 
 
     </section>

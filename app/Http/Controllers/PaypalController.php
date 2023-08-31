@@ -58,6 +58,7 @@ class PayPalController extends Controller
             // dd(session('oid') );
             Comnd::where('oid', session('oid'))->update(array('state' => 'Payée'));
             $cartItems = Cart::destroy();
+            session()->forget('oid');
             return redirect()->back()->with('cartItems' , $cartItems)->with('thanks', 'Votre commande sera livrée bientôt, merci.');
 
         }

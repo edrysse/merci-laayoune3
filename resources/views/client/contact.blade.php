@@ -270,10 +270,13 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
                             </div>
                         </div>
                         
-
-                        <span class="txt23 size38" >
-                            En face hotel nagjir, Av Es-smara, Laayoune
-                        </span>
+                        <div>
+                             {{-- <i class="fas fa-map-marker-alt"></i> --}}
+                            <span class="txt23 size38" >
+                                <i class="fas fa-map-marker-alt"></i> En face hotel nagjir, Av Es-smara, Laayoune
+                            </span>
+                        </div>
+                       
                     </div>
 
 
@@ -295,11 +298,11 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
 
                         <div style="    display: flex;
                         flex-direction: column;">
-                            <span class="txt23 size38">
-                                Contact@mercilaayoune.com
+                            <span class="txt23 size38" style="    display: flex;align-items: center;">
+                                <i class="fas fa-envelope mr-1"></i> Contact@mercilaayoune.com
                             </span>
-                            <span class="txt23 size38">
-                                www.mercilaayoune.com
+                            <span class="txt23 size38" style="    display: flex;align-items: center;">
+                                <i class="fa-solid fa-globe mr-1"></i>www.mercilaayoune.com
                             </span>
                         </div>
                         
@@ -321,11 +324,11 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
                         
 
                         <span class="txt23 size38">
-                            080-8616369
+                            <i class="fas fa-phone mr-1"></i>080-8616369
                         </span>
 
                         <span class="txt23 size38">
-                            080-8616369
+                            <i class="fas fa-phone mr-1"></i>080-8616369
                         </span>
                     </div>
 

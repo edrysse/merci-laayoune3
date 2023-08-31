@@ -50,49 +50,57 @@
                 <option value="main">main</option>
 
             </select> --}}
-            <select name="type" id="type">
-                
-                <optgroup label="Standard drinks">
-                    <option value="Espresso">Espresso</option>
-                    <option value="Thé">Thé</option>
-                    <option value="Frappuccino">Frappuccino</option>
-                    <option value="Cappuccino">Cappuccino</option>
-                    <option value="Café crème">Café crème</option>
-                    <option value="Ice tea">Ice tea</option>
-                    <option value="Ice Coffée">Ice Coffée</option>
-                    <option value="Fondue Au Chocolat">Fondue Au Chocolat </option>
-                </optgroup>
-                {{-- <optgroup label="Boissons Fraiches">
-                    <option value="Boissons Fraiches">Boissons Fraiches </option>
-                </optgroup> --}}
-                <optgroup label="Sucré">
-                    <option value="Pancake">Pancake</option>
-                    <option value="Crêpe">Crêpe</option>
-                    <option value="Gaufre">Gaufre</option>
-                </optgroup>
-                <optgroup label="Salé">
-                    <option value="Crêpe salé">Crêpe sale</option>
-                </optgroup>
-                <optgroup label="Gold drinks">
-                    <option value="Nos Jus">Nos Jus</option>
-                    <option value="Cocktail">Cocktail</option>
-                    <option value="Nos Smoothies">Nos Smoothies</option>
-                    <option value="Milk shakes">Milk shakes</option>
-                    <option value="Mojito">Mojito</option>
-                    <option value="Detox">Detox</option>
-                    <option value="Boissons Fraiches">Boissons Fraiches </option>
-                </optgroup>
-                
-                <option style="font-weight: bold;" value="Sandwich">Club Sandwich</option>
-                <option style="font-weight: bold;" value="Dessert">Dessert</option>
-                <option style="font-weight: bold;" value="à la carte">à la carte</option>
-                <option style="font-weight: bold;" value="Petits Déjeuners">Petits Déjeuners</option>
-                <option style="font-weight: bold;" value="Brunch">Brunch</option>
-                <option style="font-weight: bold;" value="Supplements">Supplements</option>
+            <form action="{{ route('repa.type') }}">
+                <select name="type" id="type">
+                    
+                    <optgroup label="Standard drinks">
+                        <option value="Espresso">Espresso</option>
+                        <option value="Thé">Thé</option>
+                        <option value="Frappuccino">Frappuccino</option>
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Café crème">Café crème</option>
+                        <option value="Ice tea">Ice tea</option>
+                        <option value="Ice Coffée">Ice Coffée</option>
+                        <option value="Fondue Au Chocolat">Fondue Au Chocolat </option>
+                    </optgroup>
+                    {{-- <optgroup label="Boissons Fraiches">
+                        <option value="Boissons Fraiches">Boissons Fraiches </option>
+                    </optgroup> --}}
+                    <optgroup label="Sucré">
+                        <option value="Pancake">Pancake</option>
+                        <option value="Crêpe">Crêpe</option>
+                        <option value="Gaufre">Gaufre</option>
+                    </optgroup>
+                    <optgroup label="Salé">
+                        <option value="Crêpe salé">Crêpe sale</option>
+                    </optgroup>
+                    <optgroup label="Gold drinks">
+                        <option value="Nos Jus">Nos Jus</option>
+                        <option value="Cocktail">Cocktail</option>
+                        <option value="Nos Smoothies">Nos Smoothies</option>
+                        <option value="Milk shakes">Milk shakes</option>
+                        <option value="Mojito">Mojito</option>
+                        <option value="Detox">Detox</option>
+                        <option value="Boissons Fraiches">Boissons Fraiches </option>
+                    </optgroup>
+                    
+                    <option style="font-weight: bold;" value="Sandwich">Club Sandwich</option>
+                    <option style="font-weight: bold;" value="Dessert">Dessert</option>
+                    <option style="font-weight: bold;" value="à la carte">à la carte</option>
+                    <option style="font-weight: bold;" value="Petits Déjeuners">Petits Déjeuners</option>
+                    <option style="font-weight: bold;" value="Brunch">Brunch</option>
+                    <option style="font-weight: bold;" value="Supplements">Supplements</option>
 
-            </select>
-        </div>
-        <script>
+                </select>
+            </div>
+                <div>
+                    <button class="btn btn-primary btn-lg p-3">
+                        Choisir
+                    </button>
+                </div>
+            </form>
+        
+        {{-- <script>
             let type = document.getElementById('type').value;
             sessionStorage.setItem('type', type);
 
@@ -100,7 +108,7 @@
             sessionStorage.getItem('type');
             
         </script>
-        {{Session::get('type')}}
+        {{Session::get('type')}} --}}
         <table class="table" >
             <thead>
                 <tr>
@@ -115,7 +123,7 @@
             </thead>
             <tbody>
                 @foreach ($repas as $item)
-                @if ($item->type == Session::get('type'))
+                {{-- @if ($item->type == Session::get('type')) --}}
                     
                 
                     <tr>
@@ -137,7 +145,7 @@
                             </form>
                         </td>
                     </tr>
-                @endif
+                {{-- @endif --}}
                 @endforeach
 
             </tbody>

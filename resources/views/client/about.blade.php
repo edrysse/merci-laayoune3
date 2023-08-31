@@ -19,10 +19,6 @@
 @section('content')
     @include('client.includes.aside')
     <base href="/public">
-
-
-
-
     <!-- Title Page -->
     <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15"
         style="background-image: url(clientpage/images/bg-title-page-03.jpg);">
@@ -94,7 +90,7 @@
                 <div class="mt-3">
                     <!-- Button1 -->
                     <a href="{{ route('clientReservation.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4 btn-menu" onmousemove="alter1();" onmouseout="alter2();">
-                        Look Menu
+                        Voir Menu
                     </a>
                 </div>
 
@@ -232,7 +228,9 @@
                         <!-- -Block5 -->
                         <div class="blo5 pos-relative p-t-60">
                             <div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t">
-                                <img src={{ $chef->image }} alt="{{ $chef->image }}">
+                                <img style="object-fit: cover;
+                                width: 100%;
+                                height: 100%;" src={{ $chef->image }} alt="{{ $chef->image }}">
                             </div>
 
                             <div class="text-blo5 size34 t-center bo-rad-10 bo7 p-t-90 p-l-35 p-r-35 p-b-30">

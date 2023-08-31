@@ -14,9 +14,22 @@ class RepasConroller extends Controller
      }
     public function index()
     {
+
         $profile=Profil::where('id_user',Auth::id())->first();
         $repas = Repas::paginate(15);
         return view('repas.index', compact('repas','profile'));
+    }
+    public function index_type(Request $request)
+    {
+        $request->validate([
+            'type' => 'required'
+
+        ]);
+
+
+        $repas = Repas::where('type', $request->type)->paginate(15);
+        // return redirect()->back()->with('repas', $repas) ;
+        return view('repas.index', compact('repas'));
     }
 
     /**

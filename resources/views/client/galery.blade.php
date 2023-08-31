@@ -82,19 +82,21 @@
             <a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
             <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
             <a href="#" class="item-pagination flex-c-m trans-0-4">3</a>
-        </div>
-    </div> --}}
+        {{-- </div> --}}
+     
 
 
 
-    <div class="container mb-5">
+    {{-- <div class="container mb-5">
         <div class="row">
             <div class="splide">
                 <div class="splide__track">
                     <div class="splide__list">
                         @foreach ($photos as $item)
                             <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom {{ $item->type }}">
-                                <img src={{ $item->photo }} alt="IMG-GALLERY">
+                                <img style="object-fit: cover;
+                                width: 100%;
+                                height: 100%;" src={{ $item->photo }} alt="IMG-GALLERY">
 
                                 <div class="overlay-item-gallery trans-0-4 flex-c-m">
                                     <a class="btn-show-gallery flex-c-m fa fa-search" href={{ $item->photo }}
@@ -106,7 +108,48 @@
                 </div>
             </div>
         </div>
+    </div> --}}
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        @foreach ($photos as $item)
+                            
+                        <div class="col-sm-4 splide__slide m-2">
+                            <div class="card  text-dark">
+                                <div class="">
+                                        {{-- <div class="mb-1">
+                                                
+                                                    <img style=" object-fit: cover;
+                                                    width: 100%;
+                                                    height: 100%;" src="clientpage/images/profile.webp" alt="">
+
+                                        </div> --}}
+                                        <div class="">
+                                            <img style="object-fit: cover;
+                                            width: 100%;
+                                            height: 100%;" src={{ $item->photo }} alt="IMG-GALLERY">
+            
+                                            <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                                                <a class="btn-show-gallery flex-c-m fa fa-search" href={{ $item->photo }}
+                                                    data-lightbox="gallery"></a>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
@@ -136,5 +179,16 @@
     
     
         <script src="assets/js/jquery.js"></script>
+
+    </div>
+
+
+    
+
+
+
+
+
+        
 
 @endsection

@@ -283,49 +283,6 @@
         }
 
 
-        /* .user {
-        display: inline-block;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        }
-
-        .circular--square {
-        border-radius: 50%;
-        }
-
-        .circular--landscape {
-        display: inline-block;
-        position: relative;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        border-radius: 50%;
-        }
-
-        .circular--landscape img {
-        width: auto;
-        height: 100%;
-        margin-left: -50px;
-        }
-
-        .circular--portrait {
-        position: relative;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        border-radius: 50%;
-        }
-
-        .circular--portrait img {
-        width: 100%;
-        height: auto;
-        } */
-
         .user {
             object-fit: cover;
             width: 100%;
@@ -368,7 +325,7 @@
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
                             <!-- Button1 -->
                             <a href="{{ route('clientMenu.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4">
-                                Look Menu
+                                Voir Menu
                                 {{-- <i class="fa fa-angle-double-down"></i> --}}
                             </a>
                         </div>
@@ -400,7 +357,7 @@
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
                             <!-- Button1 -->
                             <a href="{{ route('clientMenu.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4">
-                                Look Menu
+                                Voir Menu
                             </a>
                         </div>
                     </div>
@@ -433,7 +390,7 @@
                         <div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
                             <!-- Button1 -->
                             <a href="{{ route('clientMenu.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4">
-                                Look Menu
+                                Voir Menu
                             </a>
                         </div>
                     </div>
@@ -704,7 +661,7 @@
                         </span>
 
                         <h3 class="tit3 t-center m-b-35 m-t-2">
-                            Book table
+                            Réserver une table
                         </h3>
                     </div>
 
@@ -725,7 +682,7 @@
 
                                 <!-- Time -->
                                 <span class="txt9">
-                                    Time
+                                    Horaire
                                 </span>
 
                                 <div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
@@ -755,7 +712,7 @@
 
                                 <!-- People -->
                                 <span class="txt9">
-                                    People
+                                    Personnes
                                 </span>
 
                                 <div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
@@ -780,22 +737,22 @@
                             <div class="col-md-6">
                                 <!-- Name -->
                                 <span class="txt9">
-                                    Name
+                                    Nom complet
                                 </span>
 
                                 <div class="wrap-inputname size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                     <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="nom"
-                                        placeholder="Name">
+                                        placeholder="Nom complet">
                                 </div>
 
                                 <!-- Phone -->
                                 <span class="txt9">
-                                    Phone
+                                    Telephone
                                 </span>
 
                                 <div class="wrap-inputphone size12 bo2 bo-rad-10 m-t-3 m-b-23">
                                     <input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone"
-                                        placeholder="Phone">
+                                        placeholder="Telephone">
                                 </div>
 
                                 <!-- Email -->
@@ -900,13 +857,12 @@
                                                     @if (is_null($review->image))
                                                     
                                                         <img src="clientpage/images/profile.webp" alt="{{ $review->image }}" class="user">
-                                                    </td>
+
                                                     
                                                         
                                                     @else
                                                     
                                                     <img src="{{ $review->image }}" alt="{{ $review->image }}" class="user">
-                                                </td>
                         
                                                     @endif
                                                 </div>
@@ -946,74 +902,12 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
     </section>
 
 
-    <!-- Video -->
-    {{-- <section class="section-video parallax100" style="background-image: url(clientpage/images/bg-cover-video-02.jpg);">
-        <div class="content-video t-center p-t-225 p-b-250">
-            <div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal"
-                data-target="#modal-video-01">
-
-            </div>
-        </div>
-    </section> --}}
-
-
-    <!-- Blog -->
-    {{-- <section class="section-blog bg-white p-t-115 p-b-123">
-        <div class="container">
-            <div class="title-section-ourmenu t-center m-b-22">
-                <span class="tit2 t-center">
-                    Latest News
-                </span>
-
-                <h3 class="tit5 t-center m-t-2">
-                    The Blog
-                </h3>
-            </div>
-
-            <div class="row">
-                @foreach ($blogs as $blog)
-                    <div class="col-md-4 p-t-30">
-                        <!-- Block1 -->
-                        <div class="blo1">
-                            <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-                                <a href="blog-detail.html"><img src={{ $blog->image }} alt="{{ $blog->image }}"></a>
-
-                                <div class="time-blog">
-                                    {{ $blog->created_at }}
-                                </div>
-                            </div>
-
-                            <div class="wrap-text-blo1 p-t-35">
-                                <a href="blog-detail.html">
-                                    <h4 class="txt5 color0-hov trans-0-4 m-b-13">
-                                        {{ $blog->titre }}
-                                    </h4>
-                                </a>
-
-                                <p class="m-b-20">
-                                    {{ $blog->description }}
-                                </p>
-
-                                <a href="{{ route('clientBlog_detail.show', $blog->id) }}" class="txt4">
-                                    Continue Reading
-                                    <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section> --}}
-
-
-
-    
-
-
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>

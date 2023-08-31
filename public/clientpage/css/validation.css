@@ -440,6 +440,22 @@
         left: 2%;
     }
 }
+
+@media (max-width: 429px)
+{
+    .Mlivraison {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 388px)
+{
+    .sous-resume div .paymenticons span  {
+        font-size: 12px;
+    }
+}
+
+
 /* @media (max-width: 557px)
 {
 

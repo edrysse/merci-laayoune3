@@ -135,6 +135,7 @@ class CheckoutController extends Controller
             return redirect($response['paypal_link']);
         }
             $cartItems = Cart::destroy();
+            session()->forget('oid');
             return redirect()->back()->with('cartItems' , $cartItems)->with('thanks', 'Votre commande sera livrée bientôt, merci.');
     }
 
