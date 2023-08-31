@@ -15,12 +15,7 @@
         <br />
         <br />
         <br />
-        {{-- <div class="jumbotron">
-            <h1 style="color:black">All Commandes</h1>
-        </div>
-        <div class="">
-            <h1 style="color:black">All Commandes</h1>
-        </div> --}}
+
         <section class="mb-5"
             style="background-image: url(clientpage/images/bg-title-page-01.jpg); padding: 5em 0em;">
             <h2 class="tit6 t-center" style="    font-size: 3rem;
@@ -33,9 +28,7 @@
             <thead>
                 <tr>
                     <th scope="col" style="width: 135px">Client info </th>
-                    {{-- <th scope="col"></th> --}}
-                    {{-- <th scope="col" style="width: 150px;">ِContact</th> --}}
-                    {{-- <th scope="col">Telephone</th> --}}
+
                     <th scope="col" style="width:150px;">Adresse</th>
                     <th scope="col" style="width:200px">Commande</th>
                     <th scope="col" style="width:140px">Commande info</th>
@@ -52,13 +45,10 @@
                             <br> <br> <b>Tel :</b> <span style="color: #fff">{{ $item->phone }}</span>
                             <br> <br> <b>Email :</b> <span style="color: #fff">{{ $item->email }}</span>
                         </td>
-                        {{-- <td></td> --}}
-                        {{-- <td data-label="Contact" style="overflow: auto">{{ $item->phone }} <br><br> {{ $item->email }}</td> --}}
-                        {{-- <td>{{ $item->phone }}</td> --}}
+
                         <td data-label="Adresse" style="white-space: wrap; overflow: auto;"><br><span style="color:#fff">{{ $item->adresse }}</span></td>
                         <td data-label="Commande" style="overflow: auto;"> <br>
-                            {{-- {{str_replace("|", '<br>', $item->commande)}}  --}}
-                            {{-- {{ $item->commande }} --}}
+
                             <span style="color:#fff">
                                 @php
                                 $item->commande;

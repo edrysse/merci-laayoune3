@@ -5,17 +5,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            /* margin-top: 20px; */
         }
         .icons img:not(:first-child){
             margin-left: 20px;
         }
-        /* .icons img{
-            filter: grayscale(100%);
-        }
-        .icons img:hover{
-            filter: grayscale(0%);
-        } */
+
 
         .mini-footer {
             display: flex;
@@ -30,7 +24,6 @@
             color: #ec1d25;
         }
     </style>
-    {{-- <div class="container p-t-40 p-b-70"> --}}
     <div class="container p-t-40 ">
         <div class="row">
             <div class="col-sm-6 col-md-4 p-t-50">
@@ -97,62 +90,7 @@
                     
                 </ul>
 
-                <!-- - -->
-                {{-- <h4 class="txt13 m-b-32">
-                    Opening Times
-                </h4>
 
-                <ul>
-                    <li class="txt14">
-                        <a>
-                            MONDAY-THURSDAY
-                        </a>
-
-                        <span style="color:brown">
-                            10:00-22:00
-                        </span>
-                    </li>
-
-
-
-
-                    <li class="txt14">
-                        <a>
-                            FRIDAY
-                        </a>
-
-                        <span style="color:brown">
-                            (CLOSE)
-                        </span>
-                    </li>
-
-
-                    <li class="txt14">
-                        <a>
-                            SATURDAY
-                        </a>
-
-                        <span style="color:brown">
-                            10:00-02:00
-                        </span>
-                    </li>
-
-                    <li class="txt14">
-                        <a>
-                            SANDAY
-                        </a>
-
-                        <span style="color:brown">
-                            10:00-02:00
-                        </span>
-                    </li>
-                </ul> --}}
-                {{-- <div class="icons">
-                    <img src="clientpage/images/payment/logo_cmi.png" width="40px" alt="">
-                    <img src="clientpage/images/payment/visa.png" alt="" width="60px">
-                    <img src="clientpage/images/payment/mastercard.png" alt="" width="50px">
-                    <img src="clientpage/images/payment/paypal.png" alt="" width="80px">
-                </div> --}}
                 <div class="icons">
                     <img src="clientpage/images/payment/logo_cmi.png" width="40px" alt="">
                     <img src="clientpage/images/payment/visa.png" alt="" width="60px">
@@ -168,34 +106,6 @@
                 </div>
             </div>
 
-            {{-- <div class="col-sm-6 col-md-4 p-t-50">
-                <!-- - -->
-                <h4 class="txt13 m-b-33">
-                    Latest twitter
-                </h4>
-
-                <div class="m-b-25">
-                    <span class="fs-13 color2 m-r-5">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </span>
-                    <a href="#" class="txt15">
-                        @AsebbaneRestaurant
-                    </a>
-
-                    <p class="txt14 m-b-18">
-                        Asebbane Restaurant is the best option, if you want delicious healthy meals with high quality.
-                        <a href="#" class="txt15">
-                            https://AsebbaneRestaurant.com
-                        </a>
-                    </p>
-
-                    <span class="txt16">
-                        21 Dec 2017
-                    </span>
-                </div>
-
-
-            </div> --}}
 
             <div class="col-sm-6 col-md-4 p-t-50">
                 <!-- - -->
@@ -270,19 +180,13 @@
             <div class="col-sm-6 col-md-4 p-t-50">
 
                 <h4 class="txt13 m-b-33">
-                    Location
+                    Localisation
                 </h4>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.179599254894!2d-13.199997324552296!3d27.15063887650619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc3773a103f1c107%3A0xa1eb7796bf4aba3!2sMerci%20Laayoune!5e0!3m2!1sfr!2s!4v1691700536776!5m2!1sfr!2s" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
 
-        {{-- <div class="icons">
-            <img src="clientpage/images/payment/logo_cmi.png" width="40px" alt="">
-            <img src="clientpage/images/payment/visa.png" alt="" width="60px">
-            <img src="clientpage/images/payment/mastercard.png" alt="" width="50px">
-            <img src="clientpage/images/payment/paypal.png" alt="" width="80px">
-        </div> --}}
 
 
 <span style="display:block;
@@ -305,30 +209,7 @@
 
     </div>
 
-    {{-- <div class="end-footer bg2">
-        <div class="container">
-            <div class="flex-sb-m flex-w p-t-22 p-b-22">
-                <div class="p-t-5 p-b-5">
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-facebook m-l-18" aria-hidden="true"></i></a>
-                    <a href="#" class="fs-15 c-white"><i class="fa fa-twitter m-l-18" aria-hidden="true"></i></a>
-                </div>
 
-                <div class="txt17 p-r-20 p-t-5 p-b-5">
-                    Copyright &copy; 2018 All rights reserved | This template is made with <i class="fa fa-heart"></i>
-                    by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    {{-- <div class="col-sm-6 col-md-4 p-t-50">
-        <div>
-            <img src="clientpage/images/payment/logo_cmi.png" width="50px" alt="">
-            <img src="clientpage/images/payment/visa.png" alt="" width="80px">
-            <img src="clientpage/images/payment/mastercard.png" alt="" width="70px">
-            <img src="clientpage/images/payment/paypal.png" alt="" width="100px">
-        </div>
-    </div> --}}
 
     
 </footer>

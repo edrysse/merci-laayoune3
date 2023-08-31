@@ -22,9 +22,7 @@
             <a href={{ route('clientAbout.index') }} class="txt19">About</a>
         </li>
 
-        {{-- <li class="t-center m-b-13">
-            <a href="{{ route('clientBlog.index') }}" class="txt19">Blog</a>
-        </li> --}}
+
 
         <li class="t-center m-b-33">
             <a href={{ route('clientContact.index') }} class="txt19">Contact</a>

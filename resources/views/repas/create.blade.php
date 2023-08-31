@@ -201,11 +201,7 @@
         </div>
         <div style="display: flex; justify-content: flex-start; align-items: center;">
             <button class="envoyer" type="submit" value="envoyer">envoyer</button>
-        {{-- <a href="" class="btn envoyer" style="color:#2A3038">retour au menu</a> --}}
-        {{-- <div class="ret">
-            <a href="repas" class="btn btn-link text-muted " style="text-decoration: none; font-size:1em; ">
-                 <span class="ContinueSH" style="color:#ffffff">Retour au menu <i class="mdi mdi-arrow-right me-1"></i></span> </a>
-        </div>  --}}
+
         </div>
         @if ($msg = Session::get('succes'))
             <div class="alert alert-success">

@@ -94,7 +94,6 @@
         .box .btn{padding: 5px 40px 5px 40px;font-size: 1rem}}
     .disclaimer{font-size: .9rem;color: darkgray}
     .related h3{font-weight: 900}
-    /* footer{background: #212529;height: 80px;color: #fff} */
 </style>
 
     <!-- Main menu -->
@@ -147,49 +146,7 @@
     </div>
         <div class="container">
             
-            {{-- <div class="row">
-                <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
-                    <div class="wrap-item-mainmenu p-b-22">
-                        <h3 class="tit-mainmenu tit10 p-b-25" style="color:brown">
-                            STARTERS
-                        </h3>
-                        @foreach ($starters as $item)
-                            
-                            <div class="item-mainmenu m-b-36">
-                                <div class="flex-w flex-b m-b-3">
-                                    <a href="{{ route('cart.show', $item->id) }}" class="name-item-mainmenu txt21">
-                                        
-                                        <button class="btn btn-danger flex-shrink-0 category" type="submit">
-                                            <i class="bi-cart-fill me-1"></i>
-                                            {{ $item->nom }}
-                                        </button>
-                                    </a>
-
-                                    <div class="line-item-mainmenu bg3-pattern"></div>
-
-                                    <div class="price-item-mainmenu txt22">
-                                        {{ $item->prix }} DHs
-                                    </div>
-                                </div>
-
-                                <span class="info-item-mainmenu txt23">
-                                    {{ $item->description }}
-                                </span>
-                            </div>
-                        @endforeach
-
-                    </div>
-
-
-
-                </div>
-
-                <div class="col-md-10 col-lg-6 p-l-35 p-l-15-lg m-l-r-auto">
-                    
-
-                    
-                </div>
-            </div> --}}
+            
 
 
             <h3 class="tit-mainmenu tit10 p-b-25" style="color:brown">

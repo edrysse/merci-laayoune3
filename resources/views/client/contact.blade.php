@@ -55,11 +55,7 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
     }
 
     
-/* @media (max-width: 768px){
-    .col-md-3, .col-sm-3{
-        flex: 0 0 50%;
-         max-width: 50%; 
-} */
+
 
 @media (max-width: 992px){
     .col-md-3, .col-sm-3{
@@ -116,7 +112,7 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
 
         <div class="container">
             <h3 class="tit7 t-center p-b-62 p-t-105">
-                ENVOIEZ-NOUS UN MESSAGE
+                ENVOYEZ-NOUS UN MESSAGE
             </h3>
 
             <form action="{{ route('createContact') }}" class="wrap-form-reservation size22 m-l-r-auto" method="patch">
@@ -174,83 +170,7 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
                 </div>
             </form>
 
-            {{-- <div class="row p-t-135">
-                <div class="col-sm-8 col-md-4 col-lg-6 m-l-r-auto p-t-30">
-                    <div class="dis-flex m-l-23">
-                        <div class="p-r-40 p-t-6">
-                            <img src={{ asset('clientpage/images/icons/map-icon.png') }} alt="IMG-ICON">
-                        </div>
 
-                        <div class="flex-col-l">
-                            <span class="tt p-b-10">
-                                Location
-                            </span>
-
-                            <span class="txt23 size38">
-                                8th floor, 379 Hudson St, New York, NY 10018
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-8 col-md-4 col-lg-6 m-l-r-auto p-t-30">
-                    <div class="dis-flex m-l-23">
-                        <div class="p-r-40 p-t-6">
-                            <img src={{ asset('clientpage/images/icons/map-icon.png') }} alt="IMG-ICON">
-                        </div>
-
-                        <div class="flex-col-l">
-                            <span class="tt p-b-10">
-                                Location
-                            </span>
-
-                            <span class="txt23 size38">
-                                8th floor, 379 Hudson St, New York, NY 10018
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-sm-8 col-md-4 col-lg-6 m-l-r-auto p-t-30">
-                    <div class="dis-flex m-l-23">
-                        <div class="p-r-40 p-t-6">
-                            <img src={{ asset('clientpage/images/icons/map-icon.png') }} alt="IMG-ICON">
-                        </div>
-
-                        <div class="flex-col-l">
-                            <span class="tt p-b-10">
-                                Location
-                            </span>
-
-                            <span class="txt23 size38">
-                                8th floor, 379 Hudson St, New York, NY 10018
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-8 col-md-4 col-lg-6 m-l-r-auto p-t-30">
-                    <div class="dis-flex m-l-23">
-                        <div class="p-r-40 p-t-6">
-                            <img src={{ asset('clientpage/images/icons/phone-icon.png') }} alt="IMG-ICON">
-                        </div>
-
-
-                        <div class="flex-col-l">
-                            <span class="tt p-b-10">
-                                Call Us
-                            </span>
-
-                            <span class="txt23 size38">
-                                (+212) 6 36 69 30 87 </span>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div> --}}
 
 
 
@@ -265,13 +185,12 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
 
                             <div class="flex-col-l">
                                 <span class="tt p-b-10">
-                                    Location
+                                    Localisation
                                 </span>
                             </div>
                         </div>
                         
                         <div>
-                             {{-- <i class="fas fa-map-marker-alt"></i> --}}
                             <span class="txt23 size38" >
                                 <i class="fas fa-map-marker-alt"></i> En face hotel nagjir, Av Es-smara, Laayoune
                             </span>
@@ -395,62 +314,6 @@ des commentaires ou des réservations spéciales, n'hésitez pas à entrer en co
 
 
 
-
-{{-- ------------------------------------------------------------------------------------------------------------- --}}
-
-                   {{-- <div class = "col-sm-3 col-md-3 col-lg-3" >
-                      <div class="p-r-40 p-t-6">
-                        <i class="fas fa-phone"></i>
-                        </div>
-
-
-                        <div class="flex-col-l">
-                            <span class="tt p-b-10">
-                                Appelez-nous
-                            </span>
-
-                            <span class="txt23 size38">
-                                (+212) 6 36 69 30 87 </span>
-                        </div>
-                   </div>
-
-
-
-                   <div class = "col-sm-3 col-md-3 col-lg-3" >
-                    <div class="p-r-40 p-t-6">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-
-
-                    <div class="flex-col-l">
-                        <span class="tt p-b-10">
-                            contactez-nous
-                        </span>
-
-                        <span class="txt23 size38">
-                            Contact@mercilaayoune.com 
-                        </span>
-                    </div>
-                   </div>
-
-
-
-                   <div class = "col-sm-3 col-md-3 col-lg-3" >
-                      <div class="p-r-40 p-t-6">
-                        <i class="fas fa-heart"></i>
-                    </div>
-
-
-                    <div class="flex-col-l">
-                        <span class="tt p-b-10">
-                            suivez-nous
-                        </span>
-
-                        <span class="txt23 size38">
-                             
-                        </span>
-                    </div>
-                   </div> --}}
 
 
 

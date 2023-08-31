@@ -14,10 +14,8 @@ class pannierController extends Controller
     public function index()
     {
         $cartItems=Cart::content();
-        // session()->  put('ItemsCount', $cartItems->count());        
         session()->  put('ItemsCount', count($cartItems));        
         return view('client.pannier',compact('cartItems'));
-        // return view('client.test',compact('cartItems'));
 
     }
 

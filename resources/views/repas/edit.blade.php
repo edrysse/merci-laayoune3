@@ -23,10 +23,6 @@
         </div>
 
         <label for="exampleFormControlInput1">type</label>
-        <div class="form-group select-dropdown">
-            
-            {{-- <input type="text" class="form-control" id="exampleFormControlInput1" name='type'
-                value="{{ $repa->type }}" placeholder="type"> --}}
 
 
                 <select name="type" id=""  value="{{ $repa->type }}">
@@ -41,9 +37,7 @@
                         <option value="Ice Coffée">Ice Coffée</option>
                         <option value="Fondue Au Chocolat">Fondue Au Chocolat </option>
                     </optgroup>
-                    {{-- <optgroup label="Boissons Fraiches">
-                        <option value="Boissons Fraiches">Boissons Fraiches </option>
-                    </optgroup> --}}
+
                     <optgroup label="Sucré">
                         <option value="Pancake">Pancake</option>
                         <option value="Crêpe">Crêpe</option>

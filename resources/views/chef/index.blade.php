@@ -37,7 +37,6 @@
             </h2>
         </section>
         <div class="">
-            {{-- <p style="color:black"> ajouter un chef:</p> --}}
             <a class="btn btn-primary btn-lg p-3" href="{{ route('chef.create') }}" role="button">ajouter un membre</a>
         </div>
         <table class="table" >

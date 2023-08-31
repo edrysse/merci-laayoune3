@@ -35,7 +35,6 @@ telles que les détails de livraison et les préférences spéciales, pour que n
         <div class="card checkout-order-summary">
             <div class="card-body">
                 <div class="p-3 bg-light mb-3">
-                    {{-- <h5 class="promotext" style="text-align: center;" class=" mb-0">Avez-vous un code promo? <a onclick="event.preventDefault(); return false;" style="color: #cf2227; " href=""><span class="promocode" onclick="afficheCodePromo()" >Cliquez ici pour saisir votre code</span></a></h5> --}}
                     <h5 class="promotext" style="text-align: center;" class=" mb-0">Avez-vous un code promo? <a id="promo" onclick="event.preventDefault(); return false;" style="color: #cf2227; " href=""><span class="promocode" >Cliquez ici pour saisir votre code</span></a></h5>
                 </div>
                 <form action="{{ route('coupon.add') }}">
@@ -51,7 +50,6 @@ telles que les détails de livraison et les préférences spéciales, pour que n
             </div>
         </div>
     </div>
-    {{-- <script type="text/javascript" src="/public/clientpage/js/valildation.js"></script> --}}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script>
     document.getElementById("promo").addEventListener("click", afficheCodePromo);
@@ -87,16 +85,11 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                     </div>
                     <ol class="activity-checkout mb-0 px-4 mt-3">
                         <li class="checkout-item">
-                            {{-- <div class="avatar checkout-icon p-1">
-                                <div class="avatar-title rounded-circle">
-                                    <i class="bx bxs-receipt text-white font-size-20"></i>
-                                </div>
-                            </div> --}}
+
                             
                             <div class="feed-item-list">
                                 <div>
-                                    {{-- <h5 class="font-size-16 mb-1">Informations de facturation</h5>
-                                    <p class="text-muted text-truncate mb-4">Saisir vos informations</p> --}}
+
                                     <div class="mb-3">
 
                                         @if ($errors->any())
@@ -150,17 +143,7 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                                                     <textarea class="form-control" name="notes" rows="3" placeholder="Commentaires concernant votre commande, ex: consignes de livraison, les supplements..."></textarea>
                                                 </div>
 
-                                                {{-- <div>
-                                                    <input type="radio" name="Pmethod" value="espece">
-                                                    <label for="espece">Paiement à la livraison</label>
-                                                    <input type="radio" name="Pmethod" value="CMI">
-                                                    <label for="CMI">Paiement par carte bancaire</label>
-                                                    <input type="radio" name="Pmethod" value="PayPal">
-                                                    <label for="PayPal">Paiement par PayPal</label>
 
-                                                    
-                                                    <input type="hidden" value="{{ session('oid') }}" name="oid">
-                                                </div> --}}
 
                                             </div>
 
@@ -168,7 +151,6 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                                                 $n = 1;
                                             @endphp
                                             <textarea name="commande" id="" cols="30" rows="10" hidden>
-                                            {{-- @foreach (session('ItemsCount') as $cartItem) --}}
                                             @foreach ($cartItems as $cartItem)
                                                 Article {{$n}}: {{$cartItem->name}} ({{$cartItem->price}} DH x {{$cartItem->qty}}) |  
                                             @php
@@ -178,17 +160,6 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                                             </textarea>
 
 
-                                        {{-- <div class="valret mt-4">
-                                            <div class="ret">
-                                                <a href="clientMenu" class="btn btn-link text-muted ContinueSH">
-                                                    <i class="mdi mdi-arrow-left me-1"></i> Retour au menu </a>
-                                            </div> 
-                                            <div >    
-                                                <button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
-                                                    Valider
-                                                </button>
-                                            </div> 
-                                        </div>  --}}
                                         
                                         
                                         
@@ -214,7 +185,6 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                     <div class="p-3 bg-light mb-3" style="display: flex;">
                         <div class="avatar checkout-icon p-1">
                             <div class="avatar-title rounded-circle">
-                                {{-- <i class="bx bxs-receipt text-white font-size-20"></i> --}}
                                 <svg id='Delivery_Scooter_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
 
 
@@ -251,7 +221,6 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                     <div class="p-3 bg-light mb-3" style="display: flex;">
                         <div class="avatar checkout-icon p-1">
                             <div class="avatar-title rounded-circle">
-                                {{-- <i class="bx bxs-receipt text-white font-size-20"></i> --}}
                                 <svg id='Shopping_Cart_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
 
 
@@ -272,15 +241,12 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                         </div>
                        
                     </div>
-                    {{-- <div class="p-3 bg-light mb-3">
-                        <h5 class="font-size-16 mb-0">Commande ID {{ session('oid') }} <span class="float-end ms-2"></span></h5>
-                    </div> --}}
+                    
                     <div class="table-responsive">
                         <table class="table table-centered mb-0 table-nowrap">
                             <thead>
                                 <tr>
                                     <th class="border-top-0" style="width: 33%; text-align: center;" scope="col" colspan="2">Produit</th>
-                                    {{-- <th class="border-top-0" style="width: 33%;" scope="col"></th> --}}
                                     <th class="border-top-0" style="width: 33%; text-align: center;" scope="col">Prix</th>
                                 </tr>
                             </thead>
@@ -345,7 +311,6 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                                         {{$total - $total*Session::get('discount')/100}} DH
                                     </td>
                                 </tr>
-                                {{-- <input type="hidden" value="{{$total + 15}}" name="prix"> --}}
                                 <input type="hidden" value="{{$total}}" name="prix" id="total">
                                     
                                 @else
@@ -393,7 +358,6 @@ telles que les détails de livraison et les préférences spéciales, pour que n
                                     total.value = (total.value) - (total.value)*discount/100;
 
                                     
-                                    // document.getElementById("adresse").value = "Retirer sur place";
                                     document.getElementById("adresse").innerHTML = "Retirer sur place";
                                     document.getElementById("adresse").setAttribute("disabled", true);
                                     document.getElementById("adresseHidden").innerHTML = "Retirer sur place";

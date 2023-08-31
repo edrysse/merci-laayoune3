@@ -11,8 +11,7 @@
         </div>
         <div class="form-group">
             <label for="exampleFormControlInput1">Evaluation</label>
-            {{-- <input type="text" class="form-control" id="exampleFormControlInput1" name='rate'
-                value="{{ $review->rate }}" placeholder="type"> --}}
+
                 <div class="form-group select-dropdown" style="margin-bottom: 16px">
             
                     <select name="rate" id="" >

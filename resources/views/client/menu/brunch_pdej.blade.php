@@ -64,30 +64,7 @@
                     </div>
                 @endforeach
             
-            {{-- <div class="col-md-8 col-lg-6 m-l-r-auto">
-                @foreach ($lunches as $item)
-                    <div class="blo3 flex-w flex-col-l-sm m-b-30">
-                        <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-                            <a href="{{ route('cart.show', $item->id) }}"><img src={{ $item->image }}
-                                    alt="IMG-MENU"></a>
-                        </div>
-
-                        <div class="text-blo3 size21 flex-col-l-m">
-                            <a href="{{ route('cart.show', $item->id) }}" class="txt21 m-b-3">
-                                {{ $item->nom }}
-                            </a>
-
-                            <span class="txt23">
-                                {{ $item->description }}
-                            </span>
-
-                            <span class="txt22 m-t-20">
-                                {{ $item->prix }}$
-                            </span>
-                        </div>
-                    </div>
-                @endforeach
-            </div> --}}
+            
         </div>
 </section>
 
@@ -163,30 +140,7 @@
                 @endforeach
             
 
-            {{-- <div class="col-md-8 col-lg-6 m-l-r-auto">
-                @foreach ($dinners as $item)
-                    <div class="blo3 flex-w flex-col-l-sm m-b-30">
-                        <div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-                            <a href="{{ route('cart.show', $item->id) }}"><img src={{ $item->image }}
-                                    alt="IMG-MENU"></a>
-                        </div>
-
-                        <div class="text-blo3 size21 flex-col-l-m">
-                            <a href="{{ route('cart.show', $item->id) }}" class="txt21 m-b-3">
-                                {{ $item->nom }}
-                            </a>
-
-                            <span class="txt23">
-                                {{ $item->description }}
-                            </span>
-
-                            <span class="txt22 m-t-20">
-                                {{ $item->prix }}$
-                            </span>
-                        </div>
-                    </div>
-                @endforeach
-            </div> --}}
+            
         </div>
     </div>
 
@@ -208,10 +162,7 @@
                                     <div class="card h-100 shadow-sm"> 
                                         <img src="{{$item->image}}" class="card-img-top" alt="..." > 
                                         <div class="card-body"> 
-                                            {{-- <div class="clearfix mb-3"> 
-                                                <span class="float-start badge rounded-pill bg-danger" style="width: 80px; height: 28px; font-size: 0.9em;">{{$item->nom}}</span> 
-                                                <span class="float-end price-hp" style="font-size: 1.25em;">{{$item->prix}} DH</span> 
-                                            </div>  --}}
+                                            
     
                                             <div class="flex-w flex-b m-b-3">
                                                 
@@ -226,9 +177,7 @@
                                                     {{ $item->prix }}DH
                                                 </div>
                                             </div>
-                                            {{-- <p class="card-title">
-                                                {{ $item->description }}
-                                            </p>  --}}
+                                            
                                             <div class="text-center my-4">
                                                 <a href="{{ route('cart.show', $item->id) }}" class="btn3 flex-c-m size13 txt11 trans-0-4" style="left: 50%;transform: translate(-50%, -50%); position: absolute;"
                                             >Ajouter</a> 

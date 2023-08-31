@@ -96,7 +96,6 @@
         .box .btn{padding: 5px 40px 5px 40px;font-size: 1rem}}
     .disclaimer{font-size: .9rem;color: darkgray}
     .related h3{font-weight: 900}
-    /* footer{background: #212529;height: 80px;color: #fff} */
 
 
     
@@ -187,58 +186,14 @@
     </div>
         <div class="container">
             
-            {{-- <div class="row">
-                <div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
-                    <div class="wrap-item-mainmenu p-b-22">
-                        <h3 class="tit-mainmenu tit10 " style="color:brown">
-                            STARTERS
-                        </h3>
-                        @foreach ($starters as $item)
-                            
-                            <div class="item-mainmenu m-b-36">
-                                <div class="flex-w flex-b m-b-3">
-                                    <a href="{{ route('cart.show', $item->id) }}" class="name-item-mainmenu txt21">
-                                        
-                                        <button class="btn btn-danger flex-shrink-0 category" type="submit">
-                                            <i class="bi-cart-fill me-1"></i>
-                                            {{ $item->nom }}
-                                        </button>
-                                    </a>
-
-                                    <div class="line-item-mainmenu bg3-pattern"></div>
-
-                                    <div class="price-item-mainmenu txt22">
-                                        {{ $item->prix }} DHs
-                                    </div>
-                                </div>
-
-                                <span class="info-item-mainmenu txt23">
-                                    {{ $item->description }}
-                                </span>
-                            </div>
-                        @endforeach
-
-                    </div>
-
-
-
-                </div>
-
-                <div class="col-md-10 col-lg-6 p-l-35 p-l-15-lg m-l-r-auto">
-                    
-
-                    
-                </div>
-            </div> --}}
+            
 
             
             <h3 class="tit-mainmenu tit10 " style="color:brown">
                 Pancake
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
@@ -249,10 +204,7 @@
                                 <div class="card h-100 shadow-sm"> 
                                     <img src="{{$item->image}}" class="card-img-top" alt="..."> 
                                     <div class="card-body"> 
-                                        {{-- <div class="clearfix mb-3"> 
-                                            <span class="float-start badge rounded-pill bg-danger" style="width: 80px; height: 28px; font-size: 0.9em;">{{$item->nom}}</span> 
-                                            <span class="float-end price-hp" style="font-size: 1.25em;">{{$item->prix}} DH</span> 
-                                        </div>  --}}
+
 
                                         <div class="flex-w flex-b m-b-3">
                                             
@@ -287,9 +239,7 @@
                 Crêpe
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
@@ -334,9 +284,7 @@
                 Gaufre
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 

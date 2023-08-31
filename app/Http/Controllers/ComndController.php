@@ -62,17 +62,7 @@ class ComndController extends Controller
             ]);
 
             $cartItems = Cart::destroy();
-        //   $cartItems = [];
-        //   $cartItems = null;
-
-          //session()->  put('ItemsCount', $cartItems);
-        //   session()->forget('ItemsCount');
-        // Session::forget('ItemsCount');
-        // session()->forget('ItemsCount');
-        // $cartItems=Cart::content();
-        // return view('client.validation',compact('cartItems'))->with('thanks', 'Votre commande sera livrée bientôt, merci.');
-        return redirect()->back()->with('cartItems' , $cartItems)->with('thanks', 'Votre commande sera livrée bientôt, merci.');
-        // return redirect()->back()->with(compact('cartItems'))->with('thanks', 'Votre commande sera livrée bientôt, merci.');
+            return redirect()->back()->with('cartItems' , $cartItems)->with('thanks', 'Votre commande sera livrée bientôt, merci.');
     }
 
     /**

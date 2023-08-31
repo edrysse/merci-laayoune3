@@ -37,16 +37,8 @@
         <div class="form-group">
             <label for="exampleFormControlInput1">Commande</label>
             <textarea name="commande" id="" cols="50" rows="10">{{ $comnd->commande }}</textarea>
-            {{-- <input type="text" class="form-control" id="exampleFormControlInput1" name='commande'
-                value="{{ $comnd->commande }}" > --}}
+
         </div>
-        {{-- <div class="form-group">
-            <label for="exampleFormControlTextarea1">livraison</label>
-            <select name="livraison" value="{{ $commande->livraison }}">
-                <option value="valive">delivred</option>
-                <option value="non_valide" selected>no_delivred</option>
-            </select>
-        </div> --}}
 
         <button type="submit" value="envoyer">update</button>
     </form>

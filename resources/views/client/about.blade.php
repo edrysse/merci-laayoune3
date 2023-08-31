@@ -78,11 +78,7 @@
         align-items: center;" class=" p-t-70 p-b-70">
 
 
-            {{-- <div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal"
-                data-target="#modal-video-01"> --}}
-
-                {{-- <img id="menu-w" class="menu-w" style="width:180px;" src="clientpage/images/menu-w.svg" alt="" >
-                <img id="menu-r" class="menu-r"  style="width:180px; display:none;" src="clientpage/images/menu-r.svg" alt="" > --}}
+        
 
                 <span class="tit2 p-l-15 p-r-15" style="font-size: 70px; color:#fff;">
                     Découvrir notre Menu
@@ -99,23 +95,7 @@
         </div>
     </section>
 
-    {{-- <script>
-        var menu_w = document.getElementById('menu-w');
-        var menu_r = document.getElementById('menu-r');
 
-        function alter1() 
-        {
-                menu_w.style.display = "none";
-                menu_r.style.display = "inline";
-
-        }
-        function alter2() 
-        {
-                menu_w.style.display = "inline";
-                menu_r.style.display = "none";
-
-        }
-    </script> --}}
 
     <!-- Delicious & Romantic-->
     <section class="bg1-pattern p-t-120 p-b-105">
@@ -182,18 +162,11 @@
 
     <!-- Banner -->
     <div class="parallax0 parallax100" style="background-image: url(clientpage/images/bg-cover-video-02.jpg);">
-        {{-- <div class="overlay0-parallax t-center size33"></div> --}}
         
         <div style="display: flex;
         flex-direction: column;
         align-items: center;" class=" p-t-70 p-b-70">
 
-
-            {{-- <div class="btn-play ab-center size16 hov-pointer m-l-r-auto m-t-43 m-b-33" data-toggle="modal"
-                data-target="#modal-video-01"> --}}
-
-                {{-- <img id="menu-w" class="menu-w" style="width:180px;" src="clientpage/images/menu-w.svg" alt="" >
-                <img id="menu-r" class="menu-r"  style="width:180px; display:none;" src="clientpage/images/menu-r.svg" alt="" > --}}
 
                 <span class="tit2 p-l-15 p-r-15" style="font-size: 70px; color: #fff">
                     Reserver une table

@@ -21,9 +21,7 @@
     <base href="/public">
     @include('client.includes.aside')
 
-{{-- @extends('client.includes.head') --}}
 
-{{-- @extends('meta') --}}
 
     <style>
         .checked {
@@ -326,7 +324,6 @@
                             <!-- Button1 -->
                             <a href="{{ route('clientMenu.index') }}" class="btn1 flex-c-m size1 txt3 trans-0-4">
                                 Voir Menu
-                                {{-- <i class="fa fa-angle-double-down"></i> --}}
                             </a>
                         </div>
                     </div>
@@ -445,15 +442,11 @@
                 Discover
             </span>
 
-            {{-- <h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
-                Asebbane Place
-            </h3> --}}
 
             <div style="    display: flex;
             flex-direction: column;
             align-items: center;">
                 <div class="mb-4" >
-                    {{-- Merci Laayoune --}}
                     <img class="mercilogo-autre"  src="clientpage/images/MERCI_IMG/LOGO/Logo-Merci-b1.png" alt="" >
                 </div>
             
@@ -798,44 +791,7 @@
             </h3>
         </div>
 
-        <!-- - -->
-        {{-- <div class="wrap-slick3">
-            <div class="slick3">
-                @foreach ($comments as $comment)
-                    <div class="item-slick3 item1-slick3">
-                        <div class="wrap-content-slide3 p-b-50 p-t-50">
-                            <div class="container">
-                                <div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false"
-                                    data-appear="zoomIn">
-                                    <img src={{ $comment->blog->user->profile->image }} alt="IGM-AVATAR">
-                                </div>
 
-                                <div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
-                                    <p class="t-center txt12 size15 m-l-r-auto">
-                                        “ {{ $comment->commantaire }} ”
-                                    </p>
-
-                                    <div class="star-review fs-18 color0 flex-c-m m-t-12">
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star p-l-1" aria-hidden="true"></i>
-                                        <i class="fa fa-star p-l-1" aria-hidden="true"></i>
-                                        <i class="fa fa-star p-l-1" aria-hidden="true"></i>
-                                        <i class="fa fa-star p-l-1" aria-hidden="true"></i>
-                                    </div>
-
-                                    <div class="more-review txt4 t-center animated visible-false m-t-32"
-                                        data-appear="fadeInUp">
-                                        {{ $comment->name }} ˗ {{ $comment->blog->user->profile->adresse }}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-
-            <div class="wrap-slick3-dots m-t-30"></div>
-        </div> --}}
 
         <div class="container">
             <div class="row">
@@ -847,12 +803,10 @@
                             <div class="col-sm-4 splide__slide m-2">
                                 <div class="card  text-dark">
                                     <div class="card-body">
-                                        {{-- <div class="pic-blo5 size14 bo4 wrap-cir-pic hov-img-zoom ab-c-t"> --}}
                                             <div style="    display: flex;
                                             align-items: center;
                                             flex-direction: column;
                                         }" class="mb-1">
-                                                 {{-- <div class="pic-blo5 size11 bo4 wrap-cir-pic hov-img-zoom "> --}}
                                                  <div class="pic-blo5 bo4 wrap-cir-pic hov-img-zoom user-border" >
                                                     @if (is_null($review->image))
                                                     

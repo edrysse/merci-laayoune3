@@ -41,10 +41,10 @@
             </h2>
         </section>
         <div class="">
-            {{-- <h1 style="color: black">All reservations</h1> --}}
+
             <a class="btn btn-primary btn-lg p-3" href="{{ route('reservation.create') }}" role="button">ajouter réservation</a>
-            {{-- <a class="btn btn-danger btn-lg" href="{{ route('reservation.Trashed') }}" role="button">trashed<i
-                    class="fa-solid fa-trash"></i></a> --}}
+
+            
 
         </div>
         @if ($reservations->count() > 0)

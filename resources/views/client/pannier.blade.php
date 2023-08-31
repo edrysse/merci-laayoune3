@@ -141,18 +141,7 @@ leurs prix et les quantités sélectionnées avant de passer à l'étape suivant
             </tr>
             @endforeach
         </tbody>
-        {{-- <tfoot>
-            <tr class="pannier">
-                <td colspan="4" >
-                    
-                </td>
-                <td colspan="2" class="d-flex justify-content-between p-2 mb-2 " style="background-color: #e1f5fe;">
-                    <h5 class="fw-bold mb-0">Total:</h5>
-                    <h5 class="fw-bold mb-0">{{ $total }} DHS</h5>
-                </td>
-            </tr>
-            
-        </tfoot> --}}
+
         </table>
         <div class="total">
             <div class="t">
@@ -162,8 +151,7 @@ leurs prix et les quantités sélectionnées avant de passer à l'étape suivant
         
             <div class="button">
                 <div class="mr-3">
-                    {{-- <a href="clientMenu" class="btn btn-link text-muted ContinueSH">
-                        <i class="mdi mdi-arrow-left me-1"></i> Continue Shopping </a> --}}
+
                     <a href="clientMenu" class="btn3 flex-c-m size13 txt11 trans-0-4"> <i class="mdi mdi-arrow-left me-1"></i> Retour au menu</a>
                 </div>
                 <div>

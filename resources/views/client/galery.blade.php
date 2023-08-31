@@ -47,68 +47,7 @@
 
     <!-- Gallery -->
     <div class="section-gallery p-t-118 p-b-100">
-        {{-- <div
-            class="wrap-label-gallery filter-tope-group size27 flex-w flex-sb-m m-l-r-auto flex-col-c-sm p-l-15 p-r-15 m-b-60">
-            <button class="label-gallery txt26 trans-0-4 is-actived" data-filter="*">
-                Tous les Photos
-            </button>
-            <button class="label-gallery txt26 trans-0-4" data-filter=".food">
-                soir
-            </button>
 
-            <button class="label-gallery txt26 trans-0-4" data-filter=".events">
-                Evenement
-            </button>
-
-            <button class="label-gallery txt26 trans-0-4" data-filter=".guests">
-                Invités Vip
-            </button>
-        </div>
-
-        <div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
-            @foreach ($photos as $item)
-                <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom {{ $item->type }}">
-                    <img src={{ $item->photo }} alt="IMG-GALLERY">
-
-                    <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                        <a class="btn-show-gallery flex-c-m fa fa-search" href={{ $item->photo }}
-                            data-lightbox="gallery"></a>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-
-        <div class="pagination flex-c-m flex-w p-l-15 p-r-15 m-t-24 m-b-50">
-            <a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
-            <a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
-            <a href="#" class="item-pagination flex-c-m trans-0-4">3</a>
-        {{-- </div> --}}
-     
-
-
-
-    {{-- <div class="container mb-5">
-        <div class="row">
-            <div class="splide">
-                <div class="splide__track">
-                    <div class="splide__list">
-                        @foreach ($photos as $item)
-                            <div class="item-gallery isotope-item bo-rad-10 hov-img-zoom {{ $item->type }}">
-                                <img style="object-fit: cover;
-                                width: 100%;
-                                height: 100%;" src={{ $item->photo }} alt="IMG-GALLERY">
-
-                                <div class="overlay-item-gallery trans-0-4 flex-c-m">
-                                    <a class="btn-show-gallery flex-c-m fa fa-search" href={{ $item->photo }}
-                                        data-lightbox="gallery"></a>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
     
 
     <div class="container">
@@ -121,13 +60,7 @@
                         <div class="col-sm-4 splide__slide m-2">
                             <div class="card  text-dark">
                                 <div class="">
-                                        {{-- <div class="mb-1">
-                                                
-                                                    <img style=" object-fit: cover;
-                                                    width: 100%;
-                                                    height: 100%;" src="clientpage/images/profile.webp" alt="">
-
-                                        </div> --}}
+            
                                         <div class="">
                                             <img style="object-fit: cover;
                                             width: 100%;

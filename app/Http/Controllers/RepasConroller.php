@@ -28,7 +28,6 @@ class RepasConroller extends Controller
 
 
         $repas = Repas::where('type', $request->type)->paginate(15);
-        // return redirect()->back()->with('repas', $repas) ;
         return view('repas.index', compact('repas'));
     }
 
@@ -64,7 +63,6 @@ class RepasConroller extends Controller
             'image' => 'upload/photos/'.$newimage
         ]);
         $profile=Profil::where('id_user',Auth::id())->first();
-        // return redirect()->route('repas.index')->with('succes', 'added succeffly')->with('profile',$profile);
         return redirect()->back()->with('succes', 'added succeffly')->with('profile',$profile);
     }
 

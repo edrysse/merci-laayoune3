@@ -35,21 +35,11 @@
             </h2>
         </section>
         <div  >
-            {{-- <h4 style="color:black; text-transform: uppercase;">ajouter un repas:</h4> --}}
             <a class="btn btn-primary btn-lg p-3" href="{{ route('repas.create') }}" role="button">ajouter un repas</a>
         </div>
         <div class="form-group select-dropdown" style="margin-bottom: 16px">
             
-            {{-- <select name="type" id="">
-                <option value="lunch">lunch</option>
-                <option value="dinner">dinner</option>
-                <option value="breakfast"> breakfast</option>
-                <option value="starters">starters</option>
-                <option value="drink">drink</option>
-                <option value="dessert">dessert</option>
-                <option value="main">main</option>
 
-            </select> --}}
             <form action="{{ route('repa.type') }}">
                 <select name="type" id="type">
                     
@@ -100,15 +90,7 @@
                 </div>
             </form>
         
-        {{-- <script>
-            let type = document.getElementById('type').value;
-            sessionStorage.setItem('type', type);
 
-            console.log(sessionStorage.getItem('type'));
-            sessionStorage.getItem('type');
-            
-        </script>
-        {{Session::get('type')}} --}}
         <table class="table" >
             <thead>
                 <tr>
@@ -123,7 +105,6 @@
             </thead>
             <tbody>
                 @foreach ($repas as $item)
-                {{-- @if ($item->type == Session::get('type')) --}}
                     
                 
                     <tr>
@@ -145,7 +126,6 @@
                             </form>
                         </td>
                     </tr>
-                {{-- @endif --}}
                 @endforeach
 
             </tbody>

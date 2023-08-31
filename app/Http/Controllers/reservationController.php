@@ -15,7 +15,6 @@ class reservationController extends Controller
     public function index()
     {
         $profile=Profil::where('id_user',Auth::id())->first();
-        // $reservations=Reservation::all();
         $reservations=Reservation::orderBy('created_at', 'desc')->paginate(15);
         return view('reservation.index')->with('reservations',$reservations)->with('profile',$profile);
 
@@ -40,7 +39,6 @@ class reservationController extends Controller
           'email'=>'required'
       ]);
       $reservation=Reservation::create([
-        // 'id_user'=>Auth::id(),
         'date'=>$request->date,
         'heure'=>$request->heure,
         'gens'=>$request->gens,

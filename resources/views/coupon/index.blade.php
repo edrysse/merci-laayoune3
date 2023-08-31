@@ -59,10 +59,7 @@
                 
             </div>
         @endif
-        {{-- <div class=""> --}}
-            {{-- <p style="color: black">créer un nouveau image:</p> --}}
-            {{-- <a class="btn btn-primary btn-lg p-3" href="{{ route('photos.create') }}" role="button">ajouter image</a>
-        </div> --}}
+
         
         <button class="btn btn-primary btn-lg p-3" onclick="afficheCodePromo()" >
             ajouter Code promo

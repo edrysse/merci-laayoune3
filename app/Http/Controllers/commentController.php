@@ -16,8 +16,7 @@ class commentController extends Controller
     public function index()
     {
 
-        // $comments=Comment::all();
-        // return view('comment.index',compact('comments'));
+        
     }
 
     /**

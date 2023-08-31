@@ -96,7 +96,6 @@
         .box .btn{padding: 5px 40px 5px 40px;font-size: 1rem}}
     .disclaimer{font-size: .9rem;color: darkgray}
     .related h3{font-weight: 900}
-    /* footer{background: #212529;height: 80px;color: #fff} */
 
 
     
@@ -193,9 +192,7 @@
                 Nos Jus
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
@@ -206,10 +203,7 @@
                                 <div class="card h-100 shadow-sm"> 
                                     <img src="{{$item->image}}" class="card-img-top" alt="..."> 
                                     <div class="card-body"> 
-                                        {{-- <div class="clearfix mb-3"> 
-                                            <span class="float-start badge rounded-pill bg-danger" style="width: 80px; height: 28px; font-size: 0.9em;">{{$item->nom}}</span> 
-                                            <span class="float-end price-hp" style="font-size: 1.25em;">{{$item->prix}} DH</span> 
-                                        </div>  --}}
+                   
 
                                         <div class="flex-w flex-b m-b-3">
                                             
@@ -244,9 +238,7 @@
                 Cocktail
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+   
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
@@ -291,9 +283,7 @@
                 Nos Smoothies
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+     
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
@@ -339,9 +329,7 @@
                 Milk shakes
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+     
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
@@ -387,9 +375,7 @@
                 Mojito
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+       
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
@@ -435,9 +421,7 @@
                 Detox
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+      
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 
@@ -483,9 +467,7 @@
                 Boissons Fraiches
             </h3>
             <div class="line-item-mainmenu bg3-pattern" ></div>
-            {{-- <h3 class=" tit10 " style="color:brown">
-                STARTERS
-            </h3> --}}
+ 
             <main> 
                 
                 <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;"> 

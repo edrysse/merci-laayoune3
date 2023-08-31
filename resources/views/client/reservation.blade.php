@@ -332,17 +332,7 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
                             réserver une table
                         </h3>
                     </div>
-                    {{-- @if ($msg = Session::get('msg'))
-                        <div class="alert alert-secondary d-flex align-items-center" role="alert">
-                            <div>
-                                <h4>Welcome in Asebbane Restaurant</h4>
-                                <p>
-                                    {{ $msg }}
-                                </p>
-                            </div>
 
-                        </div>
-                    @endif --}}
                     <form action="{{ route('createReservation') }}" class="wrap-form-reservation size22 m-l-r-auto"
                         method="patch">
                         <div class="row">
@@ -468,7 +458,6 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
 
 
 
-            {{-- <div class="size23 w-full-md p-t-40 p-r-30 p-r-0-md"> --}}
             <div class="m-t-80" style="display: flex;
             flex-direction: column;
             align-items: center;">
@@ -484,35 +473,7 @@ Menu délicieux, Nombre de convives, Café salon de thé.">
 
                 </p>
             </div>
-{{-- 
-            <div class="info-reservation flex-w p-t-80">
-                <div class="size23 w-full-md p-t-40 p-r-30 p-r-0-md">
-                    <h4 class="txt5 m-b-18">
-                        
-                        RÉSERVER autrement
-                    </h4>
 
-                    <p class="size25">
-
-                        Appelez le <span class="txt24"> 06 36 69 30 87</span> (7j/7 et de 8h à 20h). <br>
-                        Ou contactez <span class="txt24">Contact@mercilaayoune.com</span>
-
-                    </p>
-                </div> --}}
-
-                {{-- <div class="size24 w-full-md p-t-40">
-                    <h4 class="txt5 m-b-18">
-                        For Event Booking
-                    </h4>
-
-                    <p class="size26">
-                        call us:
-                        <span class="txt24">(001) 345 6889</span>
-
-                    </p>
-                </div> --}}
-
-            {{-- </div> --}}
         </div>
     </section>
 

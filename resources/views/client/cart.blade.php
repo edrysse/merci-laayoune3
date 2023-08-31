@@ -49,7 +49,6 @@
                     <div class="meduiam mb-1">{{ $repas->type }}</div>
                     <h1 class="display-5 fw-bolder">{{ $repas->nom }}</h1>
                     <div class="fs-20 mb-7">
-                        {{-- <span class="text-decoration-line-through">{{ $repas->prix }} DHS</span> --}}
                         <span>{{ $repas->prix }} DHS</span>
 
                     </div>
@@ -57,15 +56,13 @@
                     <form action="{{ route('add_pannier', $repas->id) }}" method='get'>
                         
                         <div class="quantit">
-                            {{-- <label for="">Quantité:</label> --}}
-                            {{-- <input type="number" name="quantite" value="1" style="max-width: 3rem" /> --}}
+
                             <div class="number-input">
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" type="button"></button>
                                 <input class="quantity" min="1" name="quantite" value="1" type="number">
                                 <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" type="button"></button>
 
-                                {{-- <span class="backgroundOPL"></span>
-                                <span class="backgroundOPR"></span> --}}
+                               
                             </div>
 
                              <button class="btn btn-danger q flex-shrink-0" type="submit">
@@ -77,12 +74,6 @@
                         
                            
 
-                        {{-- <div>
-                            <button class="btn btn-danger flex-shrink-0" type="submit">
-                                <i class="bi-cart-fill me-1"></i>
-                                ajouter au panier
-                            </button>
-                        </div> --}}
                         @if (count($cartItems) == 0)
                             {{$OID = date('dmYHis').random_strings(1);}}
                             <input type="hidden" value="{{$OID}}" name="oid">
