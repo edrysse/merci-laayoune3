@@ -63,7 +63,8 @@ class clientMenu extends Controller
         $Fondue_Au_Chocolat = Repas::where('type','Fondue Au Chocolat')->get();
         $Petits_Déjeuners = Repas::where('type','Petits Déjeuners')->get();
         $Brunch = Repas::where('type','Brunch')->get();
-        return view('client.menu.standard-drinks',compact('Espresso','Thé','Frappuccino', 'Cappuccino', 'Café_crème', 'Ice_tea', 'Ice_Coffée', 'Fondue_Au_Chocolat', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
+        $Supplements = Repas::where('type','Supplements')->get();
+        return view('client.menu.standard-drinks',compact('Supplements', 'Espresso','Thé','Frappuccino', 'Cappuccino', 'Café_crème', 'Ice_tea', 'Ice_Coffée', 'Fondue_Au_Chocolat', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
     }
 
     public function index_sucre()
@@ -75,7 +76,8 @@ class clientMenu extends Controller
         $Gaufre = Repas::where('type','Gaufre')->get();
         $Petits_Déjeuners = Repas::where('type','Petits Déjeuners')->get();
         $Brunch = Repas::where('type','Brunch')->get();
-        return view('client.menu.sucre',compact('Pancake','Crêpe','Gaufre', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
+        $Supplements = Repas::where('type','Supplements')->get();
+        return view('client.menu.sucre',compact('Supplements', 'Pancake','Crêpe','Gaufre', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
     }
 
     public function index_sale()
@@ -85,7 +87,9 @@ class clientMenu extends Controller
         $Crêpe_salé = Repas::where('type','Crêpe salé')->get();
         $Petits_Déjeuners = Repas::where('type','Petits Déjeuners')->get();
         $Brunch = Repas::where('type','Brunch')->get();
-        return view('client.menu.sale',compact('Crêpe_salé', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
+        $Supplements = Repas::where('type','Supplements')->get();
+        $Supplements = Repas::where('type','Supplements')->get();
+        return view('client.menu.sale',compact('Supplements', 'Crêpe_salé', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
     }
 
     public function index_dessert()
@@ -95,7 +99,8 @@ class clientMenu extends Controller
         $Dessert = Repas::where('type','Dessert')->get();
         $Petits_Déjeuners = Repas::where('type','Petits Déjeuners')->get();
         $Brunch = Repas::where('type','Brunch')->get();
-        return view('client.menu.Dessert',compact('Dessert','Petits_Déjeuners', 'Brunch', 'cartItems'));
+        $Supplements = Repas::where('type','Supplements')->get();
+        return view('client.menu.Dessert',compact('Supplements', 'Dessert','Petits_Déjeuners', 'Brunch', 'cartItems'));
     }
     public function index_sandwich()
     {
@@ -104,7 +109,8 @@ class clientMenu extends Controller
         $Sandwich = Repas::where('type','Sandwich')->get();
         $Petits_Déjeuners = Repas::where('type','Petits Déjeuners')->get();
         $Brunch = Repas::where('type','Brunch')->get();
-        return view('client.menu.sandwich',compact('Sandwich','Petits_Déjeuners', 'Brunch', 'cartItems'));
+        $Supplements = Repas::where('type','Supplements')->get();
+        return view('client.menu.sandwich',compact('Supplements','Sandwich','Petits_Déjeuners', 'Brunch', 'cartItems'));
     }
     public function index_Gdrinks()
     {
@@ -119,7 +125,18 @@ class clientMenu extends Controller
         $Boissons_Fraiches = Repas::where('type','Boissons Fraiches')->get();
         $Petits_Déjeuners = Repas::where('type','Petits Déjeuners')->get();
         $Brunch = Repas::where('type','Brunch')->get();
-        return view('client.menu.gold-drinks',compact('Nos_Jus', 'Cocktail', 'Nos_Smoothies', 'Milk_shakes', 'Mojito', 'Detox', 'Boissons_Fraiches', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
+        $Supplements = Repas::where('type','Supplements')->get();
+        return view('client.menu.gold-drinks',compact('Supplements','Nos_Jus', 'Cocktail', 'Nos_Smoothies', 'Milk_shakes', 'Mojito', 'Detox', 'Boissons_Fraiches', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
+    }
+    public function index_Alacarte()
+    {
+        $cartItems=Cart::content();
+        session()->  put('ItemsCount', count($cartItems));
+        $à_la_carte = Repas::where('type','à la carte')->get();
+        $Petits_Déjeuners = Repas::where('type','Petits Déjeuners')->get();
+        $Brunch = Repas::where('type','Brunch')->get();
+        $Supplements = Repas::where('type','Supplements')->get();
+        return view('client.menu.a-lacarte',compact('Supplements', 'à_la_carte', 'Petits_Déjeuners', 'Brunch', 'cartItems'));
     }
 
 

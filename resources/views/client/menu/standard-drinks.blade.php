@@ -165,6 +165,9 @@
                     <a href={{ route('Dessert') }}>Dessert</a>
                 </li>
                 
+                <li>
+                    <a href={{ route('Alacarte') }}>à la carte</a>
+                </li>
 
         </nav>
         <div class="dropdown" style="width: 50%; margin: auto; padding-top: 50px; padding-bottom: 50px;">
@@ -178,6 +181,7 @@
                 <li><a class="dropdown-item" href={{ route('sucre') }}>Sucre</a></li>
                 <li><a class="dropdown-item" href={{ route('sale') }}>Salé</a></li>
                 <li><a class="dropdown-item" href={{ route('Dessert') }}>Dessert</a></li>
+                <li><a class="dropdown-item" href={{ route('Alacarte') }}>à la carte</a></li>
               </ul>
     </div>
         <div class="container">

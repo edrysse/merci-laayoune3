@@ -184,8 +184,10 @@
                 
                 <option style="font-weight: bold;" value="Sandwich">Club Sandwich</option>
                 <option style="font-weight: bold;" value="Dessert">Dessert</option>
+                <option style="font-weight: bold;" value="à la carte">à la carte</option>
                 <option style="font-weight: bold;" value="Petits Déjeuners">Petits Déjeuners</option>
                 <option style="font-weight: bold;" value="Brunch">Brunch</option>
+                <option style="font-weight: bold;" value="Supplements">Supplements</option>
 
             </select>
         </div>

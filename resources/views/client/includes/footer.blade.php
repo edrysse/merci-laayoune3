@@ -10,12 +10,12 @@
         .icons img:not(:first-child){
             margin-left: 20px;
         }
-        .icons img{
+        /* .icons img{
             filter: grayscale(100%);
         }
         .icons img:hover{
             filter: grayscale(0%);
-        }
+        } */
 
         .mini-footer {
             display: flex;
@@ -147,6 +147,12 @@
                     <img src="clientpage/images/payment/mastercard.png" alt="" width="50px">
                     <img src="clientpage/images/payment/paypal.png" alt="" width="80px">
                 </div> --}}
+                <div class="icons">
+                    <img src="clientpage/images/payment/logo_cmi.png" width="40px" alt="">
+                    <img src="clientpage/images/payment/visa.png" alt="" width="60px">
+                    <img src="clientpage/images/payment/mastercard.png" alt="" width="50px">
+                    <img src="clientpage/images/payment/paypal.png" alt="" width="80px">
+                </div>
             </div>
 
             {{-- <div class="col-sm-6 col-md-4 p-t-50">
@@ -258,12 +264,12 @@
         </div>
 
 
-        <div class="icons">
+        {{-- <div class="icons">
             <img src="clientpage/images/payment/logo_cmi.png" width="40px" alt="">
             <img src="clientpage/images/payment/visa.png" alt="" width="60px">
             <img src="clientpage/images/payment/mastercard.png" alt="" width="50px">
             <img src="clientpage/images/payment/paypal.png" alt="" width="80px">
-        </div>
+        </div> --}}
 
 
 <span style="display:block;

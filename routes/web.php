@@ -129,3 +129,4 @@ Route::get('/Menu/Sale', [clientMenu::class, 'index_sale'])->name('sale');
 Route::get('/Menu/Dessert', [clientMenu::class, 'index_dessert'])->name('Dessert');
 Route::get('/Menu/Sandwich', [clientMenu::class, 'index_sandwich'])->name('sandwich');
 Route::get('/Menu/Gdrinks', [clientMenu::class, 'index_Gdrinks'])->name('Gdrinks');
+Route::get('/Menu/A-La-Carte', [clientMenu::class, 'index_Alacarte'])->name('Alacarte');
