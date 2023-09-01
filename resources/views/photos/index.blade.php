@@ -47,7 +47,7 @@
             <thead>
                 <tr>
                     <th scope="col">image</th>
-                    <th scope="col">type</th>
+                    {{-- <th scope="col">type</th> --}}
                     <th></th>
                 </tr>
             </thead>
@@ -56,7 +56,7 @@
                     <tr>
                         <td style="display: flex;justify-content: center; border-top: 0px;"><img style="border-radius: 0%; max-width:100px; max-height:100px; width: auto; height: auto;" src="{{ $item->photo }}" alt="{{ $item->photo }}"
                                 style="width:100px; height:100px; !important" class="img-tumbnail"></td>
-                        <td style="border-top: 0px; ">{{ $item->type }}</td>
+                        {{-- <td style="border-top: 0px; ">{{ $item->type }}</td> --}}
                         <td style="border-top: 0px;"><a class="btn btn-success" href="{{ route('photos.edit', $item->id) }}">edit</a>
                         
 

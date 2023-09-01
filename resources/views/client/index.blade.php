@@ -315,7 +315,7 @@
                                 <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
                                 <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
                                 <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
-                                <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                                <a href="https://t.snapchat.com/Df0EWYBp"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
                                 <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
                             </div>
                         </h3>
@@ -346,7 +346,7 @@
                                 <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
                                 <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
                                 <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
-                                <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                                <a href="https://t.snapchat.com/Df0EWYBp"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
                                 <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
                             </div>
                         </h3>
@@ -379,7 +379,7 @@
                                 <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
                                 <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
                                 <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
-                                <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                                <a href="https://t.snapchat.com/Df0EWYBp"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
                                 <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
                             </div>
                         </h3>
@@ -455,7 +455,7 @@
                     <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
                     <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
                     <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
-                    <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                    <a href="https://t.snapchat.com/Df0EWYBp"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
                     <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
                 </div>
             </div>
@@ -471,12 +471,12 @@
                         <!-- Block1 -->
                         <div class="blo1">
                             <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                                <a href="#"><img src={{ asset('clientpage/images/intro-01.jpg') }}
+                                <a href="{{ route('clientAbout.index') }}"><img src={{ asset('clientpage/images/intro-01.jpg') }}
                                         alt="IMG-INTRO"></a>
                             </div>
 
                             <div class="wrap-text-blo1 p-t-35">
-                                <a href="#">
+                                <a href="{{ route('clientAbout.index') }}">
                                     <h4 class="txt5 color0-hov trans-0-4 m-b-13">
                                         Romantic Restaurant
                                     </h4>
@@ -495,12 +495,12 @@
                         <!-- Block1 -->
                         <div class="blo1">
                             <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                                <a href="#"><img src={{ asset('clientpage/images/intro-02.jpg') }}
+                                <a href="{{ route('clientAbout.index') }}"><img src={{ asset('clientpage/images/intro-02.jpg') }}
                                         alt="IMG-INTRO"></a>
                             </div>
 
                             <div class="wrap-text-blo1 p-t-35">
-                                <a href="#">
+                                <a href="{{ route('clientAbout.index') }}">
                                     <h4 class="txt5 color0-hov trans-0-4 m-b-13">
                                         Delicious Food
                                     </h4>
@@ -519,12 +519,12 @@
                         <!-- Block1 -->
                         <div class="blo1">
                             <div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-                                <a href="#"><img src={{ asset('clientpage/images/intro-04.jpg') }}
+                                <a href="{{ route('clientAbout.index') }}"><img src={{ asset('clientpage/images/intro-04.jpg') }}
                                         alt="IMG-INTRO"></a>
                             </div>
 
                             <div class="wrap-text-blo1 p-t-35">
-                                <a href="#">
+                                <a href="{{ route('clientAbout.index') }}">
                                     <h4 class="txt5 color0-hov trans-0-4 m-b-13">
                                         Red Wines You Love
                                     </h4>
@@ -802,6 +802,7 @@
                                 
                             <div class="col-sm-4 splide__slide m-2">
                                 <div class="card  text-dark">
+                                    <a style="text-decoration: none; color:#000000" href="https://shorturl.at/giwF9">
                                     <div class="card-body">
                                             <div style="    display: flex;
                                             align-items: center;
@@ -848,6 +849,7 @@
                                         
                                         
                                     </div>
+                                </a>
                                 </div>
                             </div>
                             @endforeach

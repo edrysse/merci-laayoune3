@@ -75,8 +75,9 @@
                             
                             
                         </td>
-                        <td> <a class="btn btn-primary" href="{{ route('comnd.edit', $item->id) }}"><i
-                                    class="fa-solid fa-pen-to-square"></i></a>
+                        <td> 
+                            {{-- <a class="btn btn-primary" href="{{ route('comnd.edit', $item->id) }}"><i
+                                    class="fa-solid fa-pen-to-square"></i></a> --}}
                         
                             <form action="{{ route('comnd.destroy', $item->id) }}" method="post">
                                 <button type="submit" class="btn btn-danger">delete</button>

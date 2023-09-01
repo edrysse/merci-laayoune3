@@ -7,13 +7,15 @@
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
-                <div class="login100-pic js-tilt" data-tilt>
-                    <img src={{ asset('loginpage/images/img-01.png') }} alt="IMG">
+                {{-- <div class="login100-pic js-tilt" data-tilt> --}}
+                <div class="login100-pic" >
+                    {{-- <img src={{ asset('loginpage/images/img-01.png') }} alt="IMG"> --}}
+                    <img src={{ asset('clientpage/images/MERCI_IMG/logo_header/Logo-Merci-b4.png') }} alt="IMG">
                 </div>
                 <form method="POST" action="{{ route('login') }}" class="login100-form validate-form" method="post">
                     @csrf
                     <span class="login100-form-title">
-                        Member Login
+                        Admin Login
                     </span>
 
                     <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">

@@ -11,9 +11,9 @@
 
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput1">type</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" value="{{ $photo->type }}"
-                name='type' placeholder="type">
+            {{-- <label for="exampleFormControlInput1">type</label> --}}
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="general"
+                name='type' placeholder="type"  hidden>
         </div>
         <button class="envoyer" type="submit" value="envoyer">update</button>
     </form>

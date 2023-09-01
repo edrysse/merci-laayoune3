@@ -115,9 +115,17 @@
                         <td data-label="type" style="border-top: 0px;">{{ $item->type }}</td>
                         <td data-label="description" style="white-space: wrap; border-top: 0px;"><br>{{ $item->description }}</td>
                         
-                        <td style="display: flex;flex-direction: column; border-top: 0px;" class="td-btn"><a class="btn btn-success" href="{{ route('repas.edit', $item->id) }}">edit</a>
+                        {{-- <td style="display: flex;flex-direction: column; border-top: 0px;" class="td-btn"><a class="btn btn-success" href="{{ route('repas.edit', $item->id) }}">edit</a> --}}
+                        <td style="display: flex;flex-direction: column; border-top: 0px;padding: 0;" class="td-btn">
+                            
+                            {{-- <a class="btn btn-success" href="{{ route('repas.edit', $item->id) }}">edit</a> --}}
+                            <form action="{{ route('repas.edit', $item->id) }}" >
+                                <button type="submit" class="btn btn-success">edit</button>
+                                @csrf
+                                @method('PATCH')    
+                            </form>
                         
-                         <a class="btn btn-primary" href="{{ route('repas.show', $item->id) }}">show</a>
+                            <a class="btn btn-primary" href="{{ route('repas.show', $item->id) }}">show</a>
                         
                             <form action="{{ route('repas.destroy', $item->id) }}" method="post">
                                 <button type="submit" class="btn btn-danger">delete</button>

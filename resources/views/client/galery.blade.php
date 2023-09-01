@@ -36,7 +36,7 @@
                     <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
                     <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
                     <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
-                    <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                    <a href="https://t.snapchat.com/Df0EWYBp"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
                     <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
                 </div>
             
@@ -46,7 +46,7 @@
 
 
     <!-- Gallery -->
-    <div class="section-gallery p-t-118 p-b-100">
+    {{-- <div class="section-gallery p-t-118 p-b-100">
 
     
 
@@ -114,10 +114,24 @@
         <script src="assets/js/jquery.js"></script>
 
     </div>
-
+ --}}
 
     
-
+<div class="section-gallery p-t-118 p-b-100">
+    <div class="wrap-gallery isotope-grid flex-w p-l-25 p-r-25">
+        @foreach ($photos as $item)
+            <div style="width:250px" class="item-gallery isotope-item bo-rad-10 hov-img-zoom {{ $item->type }}">
+                <img style="object-fit: cover;
+                width: 100%;
+                height: 100%;" src={{ $item->photo }} alt="IMG-GALLERY">
+                <div class="overlay-item-gallery trans-0-4 flex-c-m">
+                    <a class="btn-show-gallery flex-c-m fa fa-search" href={{ $item->photo }}
+                        data-lightbox="gallery"></a>
+                </div>
+            </div>
+        @endforeach
+    </div>
+</div>
 
 
 

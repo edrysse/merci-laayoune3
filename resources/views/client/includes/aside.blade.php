@@ -7,7 +7,7 @@
     <ul class="menu-sidebar p-t-95 p-b-70">
         
         <li class="t-center m-b-13">
-            <a href={{ route('clientIndex.index') }} class="txt19">Home</a>
+            <a href={{ route('clientIndex.index') }} class="txt19">Accueil</a>
         </li>
 
         <li class="t-center m-b-13">
@@ -15,11 +15,11 @@
         </li>
 
         <li class="t-center m-b-13">
-            <a href={{ route('clientGalery.index') }} class="txt19">Gallery</a>
+            <a href={{ route('clientGalery.index') }} class="txt19">Galerie</a>
         </li>
 
         <li class="t-center m-b-13">
-            <a href={{ route('clientAbout.index') }} class="txt19">About</a>
+            <a href={{ route('clientAbout.index') }} class="txt19">à propos</a>
         </li>
 
 
@@ -31,7 +31,7 @@
         <li class="t-center">
             <!-- Button3 -->
             <a href={{ route('clientReservation.index') }} class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
-                Reservation
+                Réservation
             </a>
         </li>
     </ul>
@@ -40,7 +40,7 @@
     <div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
         <!-- - -->
         <h4 class="txt20 m-b-33">
-            Gallery
+            Galerie
         </h4>
 
         <!-- Gallery -->

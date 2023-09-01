@@ -75,6 +75,7 @@ class RepasConroller extends Controller
     public function edit(Repas $repa)
     {
         $profile=Profil::where('id_user',Auth::id())->first();
+        session()->  put('type', $repa->type);
        return view('repas.edit',compact('repa','profile'));
     }
 
@@ -85,7 +86,7 @@ class RepasConroller extends Controller
         'prix' => 'required',
         'type' => 'required',
         // 'description' => 'required',
-        'image'=>'required|image'
+        // 'image'=>'required|image'
 
     ]);
 

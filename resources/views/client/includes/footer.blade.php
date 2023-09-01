@@ -83,7 +83,7 @@
                     <li class="txt14 m-b-14">
                         <i class="fab fa-snapchat fs-16"></i>
                         <div>
-                            <a href="" style="color: #999999;">@mercilaayoune</a>
+                            <a href="https://t.snapchat.com/Df0EWYBp" style="color: #999999;">@mercilaayoune</a>
                         </div>
                     </li>
 
@@ -92,11 +92,11 @@
 
 
                 <div class="icons">
-                    <img src="clientpage/images/payment/logo_cmi.png" width="40px" alt="">
-                    <img src="clientpage/images/payment/visa.png" alt="" width="60px">
-                    <img src="clientpage/images/payment/mastercard.png" alt="" width="50px">
-                    <img src="clientpage/images/payment/paypal.png" alt="" width="80px">
-                    <svg style="margin-left: 10px" id='Cash_in_Hand_24' width='50' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24'  stroke='none' fill='#000000' opacity='0'/>
+                    <img src="clientpage/images/payment/logo_cmi.png" width="30px" alt="">
+                    <img src="clientpage/images/payment/visa.png" alt="" width="50px">
+                    <img src="clientpage/images/payment/mastercard.png" alt="" width="40px">
+                    <img src="clientpage/images/payment/paypal.png" alt="" width="70px">
+                    <svg style="margin-left: 10px" id='Cash_in_Hand_24' width='40' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24'  stroke='none' fill='#000000' opacity='0'/>
 
 
                         <g transform="matrix(0.4 0 0 0.4 12 12)" >

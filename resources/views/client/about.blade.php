@@ -26,7 +26,7 @@
             flex-direction: column;
             align-items: center;">
                 <h2 class="tit6 t-center">
-                    About us
+                    à propos
                     
                 </h2>
         
@@ -40,7 +40,7 @@
                     <a href="https://www.facebook.com/mercilaayoune"><img src="clientpage/images/MERCI_IMG/social-media-merci/facebook-app-symbol-merci.png" alt="" width="22px"></a>
                     <a href="https://www.instagram.com/mercilaayoune1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/instagram-merci.png" alt="" width="22px"></a>
                     <a href="https://www.tiktok.com/@mercilaayoune"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/tik-tok-merci.png" alt="" width="22px"></a>
-                    <a href=""><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
+                    <a href="https://t.snapchat.com/Df0EWYBp"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/snapchat.png" alt="" width="22px"></a>
                     <a href="https://shorturl.at/cnrt1"><img class="ml-2" src="clientpage/images/MERCI_IMG/social-media-merci/pin-merci.png" alt="" width="22px"></a>
                 </div>
             
@@ -80,7 +80,7 @@
 
         
 
-                <span class="tit2 p-l-15 p-r-15" style="font-size: 70px; color:#fff;">
+                <span class="tit2 p-l-15 p-r-15" style="font-size: 70px; color:#fff; text-align: center;">
                     Découvrir notre Menu
                 </span>
                 <div class="mt-3">
@@ -168,7 +168,7 @@
         align-items: center;" class=" p-t-70 p-b-70">
 
 
-                <span class="tit2 p-l-15 p-r-15" style="font-size: 70px; color: #fff">
+                <span class="tit2 p-l-15 p-r-15" style="font-size: 70px; color: #fff; text-align: center;">
                     Reserver une table
                 </span>
                 <div class="mt-3">
@@ -188,11 +188,11 @@
     <section class="section-chef bgwhite p-t-115 p-b-95">
         <div class="container t-center">
             <span class="tit2 t-center">
-                Meet Our
+                Rencontrer notre
             </span>
 
             <h3 class="tit5 t-center m-b-50 m-t-5">
-                Chef
+                équipe
             </h3>
 
             <div class="row">
